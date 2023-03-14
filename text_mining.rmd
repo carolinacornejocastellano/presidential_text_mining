@@ -1,0 +1,25 @@
+---
+title: "Understanding the priorities of Peruvian governments"
+subtitle: "Exploring presidential inauguration speeches of the last decade"
+output: html_document
+---
+
+## Introduction
+
+This is a project to explore the priorities of Peruvian governments in the last decade. The data used is the presidential inauguration speeches of the last decade. The speeches are available in the website of the Peruvian Congress. The speeches are in Spanish, so I used Google Translate to translate them to English. The speeches are available in the folder "data".
+
+## Data
+
+```{r upload data}
+df <- read.csv("data/inauguraciones.csv", header = TRUE, sep = ";")
+```
+
+
+## N-grams 
+
+## Sentiment analysis
+
+## Latent Dirichlet Allocation
+augment() function from the tidytext package to add a column with the number of words in each speech.
+
+```{r}
