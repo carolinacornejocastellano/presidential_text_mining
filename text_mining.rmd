@@ -10,8 +10,12 @@ This is a project to explore the priorities of Peruvian governments in the last 
 
 ## Data
 
+```{r libraries}
+library(readxl)
+```
+
 ```{r upload data}
-df <- read.csv("data/inauguraciones.csv", header = TRUE, sep = ";")
+
 ```
 
 
