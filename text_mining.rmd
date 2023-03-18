@@ -11,8 +11,25 @@ This is a project to explore the priorities of Peruvian governments in the last 
 ## Data
 
 ```{r libraries}
-library(tidyverse)
+libraries <- c("tidyverse", 
+               "tidytext", 
+               "wordcloud", 
+               "RColorBrewer", 
+               "reshape2", 
+               "igraph", 
+               "ggraph", 
+               "widyr", 
+               "tm", 
+               "quanteda", 
+               "quanteda.textplots", 
+               "topicmodels")
 
+for (lib in libraries) {
+  suppressPackageStartupMessages(library(lib,
+    character.only = TRUE
+  ))
+}
+rm(lib, libraries)
 ```
 
 ```{r download speeches}
@@ -24,49 +41,57 @@ c("Dina Boluarte",
   "Pedro Pablo Kuczynski", 
   "Ollanta Humala", 
   "Alejandro Toledo", 
-  "Valentín Paniagua", 
+  "Valentin Paniagua", 
   "Alberto Fujimori second term", 
   "Alberto Fujimori first term")
 
-presidents <- tolower(gsub(" ", "_", presidents))
-
-links_github <- paste0(
-  "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/",
-  presidents, ".md")
+links <- paste0(
+  "https://raw.githubusercontent.com/cornellano/presidential_text_mining/main/",
+  tolower(gsub(" ", "_", presidents)), ".md")
 ```
 
 ```{r}
+df <- tibble(
+  president = presidents,
+  date = c("2022-12-07", 
+          "2021-07-28", 
+          "2020-11-17", 
+          "2018-03-23", 
+          "2016-07-28",
+          "2011-07-28", 
+          "2001-07-28", 
+          "2000-11-11", 
+          "1995-07-28",
+          "1990-07-28"), 
+  url = links
+)
+```
+
+
+```{r}
 # Read speeches
-speeches$speech <- speeches$url %>% 
-    map_chr(~ read_lines(.x, locale = locale(encoding = "UTF-8")) %>% 
+df$speech <- df$url %>% 
+    map_chr(~ read_lines(.x, 
+      locale = locale(encoding = "UTF-8")) %>% 
     paste(collapse = "\n"))
 ```
 
+## Data preparation
+Now we will tokenize the speeches and remove stopwords:
 
-
-```{r}
-# Load speeches from GitHub
-speeches <- tibble(
-  president = c("Dina Boluarte", "Pedro Castillo", "Francisco Sagasti", "Martin Vizcarra", "Pedro Pablo Kuckzynski", "Ollanta Humala", "Alejandro Toledo", "Valentín Paniagua", "Alberto Fujimori (second term)", "Alberto Fujimori (first term)"),
-  url = c("https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/dina_boluarte.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/pedro_castillo.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/francisco_sagasti.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/martin_vizcarra.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/pedro_pablo_kuczynski.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/ollanta_humala.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/alejandro_toledo.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/valentin_paniagua.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/alberto_fujimori_second_term.md",
-          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/alberto_fujimori_first_term.md")
+```{r store stopwords in Spanish as a vector}
+stopwords_es <- stopwords::stopwords("es",
+  source = "stopwords-iso"
 )
-
-# Read speeches
-speeches$speech <- speeches$url %>% map_chr(~ read_lines(.x, locale = locale(encoding = "UTF-8")) %>% paste(collapse = "\n"))
 ```
 
 
 
-## N-grams 
+## N-grams
+
+
+
+
 
 ## Sentiment analysis
 
