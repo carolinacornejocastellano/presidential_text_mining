@@ -1,5 +1,5 @@
 ---
-title: "Understanding the priorities of Peruvian governments"
+title: "_Palabras que se las lleva el viento_"
 subtitle: "Exploring presidential inauguration speeches of the last decade"
 output: html_document
 ---
@@ -11,12 +11,59 @@ This is a project to explore the priorities of Peruvian governments in the last 
 ## Data
 
 ```{r libraries}
-library(readxl)
-```
-
-```{r upload data}
+library(tidyverse)
 
 ```
+
+```{r download speeches}
+presidents <-
+c("Dina Boluarte", 
+  "Pedro Castillo", 
+  "Francisco Sagasti", 
+  "Martin Vizcarra", 
+  "Pedro Pablo Kuczynski", 
+  "Ollanta Humala", 
+  "Alejandro Toledo", 
+  "Valentín Paniagua", 
+  "Alberto Fujimori second term", 
+  "Alberto Fujimori first term")
+
+presidents <- tolower(gsub(" ", "_", presidents))
+
+links_github <- paste0(
+  "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/",
+  presidents, ".md")
+```
+
+```{r}
+# Read speeches
+speeches$speech <- speeches$url %>% 
+    map_chr(~ read_lines(.x, locale = locale(encoding = "UTF-8")) %>% 
+    paste(collapse = "\n"))
+```
+
+
+
+```{r}
+# Load speeches from GitHub
+speeches <- tibble(
+  president = c("Dina Boluarte", "Pedro Castillo", "Francisco Sagasti", "Martin Vizcarra", "Pedro Pablo Kuckzynski", "Ollanta Humala", "Alejandro Toledo", "Valentín Paniagua", "Alberto Fujimori (second term)", "Alberto Fujimori (first term)"),
+  url = c("https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/dina_boluarte.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/pedro_castillo.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/francisco_sagasti.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/martin_vizcarra.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/pedro_pablo_kuczynski.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/ollanta_humala.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/alejandro_toledo.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/valentin_paniagua.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/alberto_fujimori_second_term.md",
+          "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/alberto_fujimori_first_term.md")
+)
+
+# Read speeches
+speeches$speech <- speeches$url %>% map_chr(~ read_lines(.x, locale = locale(encoding = "UTF-8")) %>% paste(collapse = "\n"))
+```
+
 
 
 ## N-grams 
