@@ -10,7 +10,7 @@ This is a project to explore the priorities of Peruvian governments in the last 
 
 ## Data
 
-```{r libraries}
+```{r load libraries}
 libraries <- c("tidyverse", 
                "tidytext", 
                "wordcloud", 
@@ -34,16 +34,16 @@ rm(lib, libraries)
 
 ```{r download speeches}
 presidents <-
-c("Dina Boluarte", 
-  "Pedro Castillo", 
-  "Francisco Sagasti", 
-  "Martin Vizcarra", 
-  "Pedro Pablo Kuczynski", 
-  "Ollanta Humala", 
-  "Alejandro Toledo", 
-  "Valentin Paniagua", 
-  "Alberto Fujimori second term", 
-  "Alberto Fujimori first term")
+  c("Dina Boluarte", 
+    "Pedro Castillo", 
+    "Francisco Sagasti", 
+    "Martin Vizcarra", 
+    "Pedro Pablo Kuczynski", 
+    "Ollanta Humala", 
+    "Alejandro Toledo", 
+    "Valentin Paniagua", 
+    "Alberto Fujimori second term", 
+    "Alberto Fujimori first term")
 
 links <- paste0(
   "https://raw.githubusercontent.com/cornellano/presidential_text_mining/main/",
@@ -85,9 +85,84 @@ stopwords_es <- stopwords::stopwords("es",
 )
 ```
 
+```{r}
+df <- df %>% 
+  unnest_tokens(word, speech) %>% 
+  filter(!word %in% stopwords_es)
+
+```
+
+```{r general word ranking}
+df %>%
+  count(word,
+    sort = TRUE
+  )
+```
+
+```{r}
+frequency <- 
+  #regex to identify words and not _words_
+  mutate(word = str_extract(word, "[a-z']+")) %>%
+  #we count number of mentions of a word for an author
+  count(author, word) %>%
+  #we calculate proportion
+  group_by(author) %>%
+  mutate(proportion = n / sum(n)) %>% 
+  select(-n) %>% 
+  #we reshape the dataframe
+  #pivot wider means: more columns, less rows
+  pivot_wider(names_from = author, values_from = proportion) %>%
+  #pivot longer means: more rows, less columns
+  pivot_longer(`Brontë Sisters`:`H.G. Wells`,
+               names_to = "author", values_to = "proportion")
+
+frequency
+```
 
 
 ## N-grams
+We will analyze the most common bigrams:
+
+```{r bigrams}
+bigrams <- df %>%
+  unnest_tokens(bigram,
+    word,
+    token = "ngrams",
+     n = 2
+  )
+```
+
+```{r}
+bigram_sep <- bigrams %>%
+  separate(bigram, c("word1", "word2"), sep = " ")
+
+bigram_counts <- bigram_sep %>%
+  count(president,
+    word1, 
+    word2,
+    sort = TRUE
+  )
+```
+
+```{r Plot the most common bigrams}
+bigram_counts %>%
+  filter(n > 5) %>%
+  ggplot(aes(x = reorder(word1, n), 
+            y = n, 
+            fill = president)) +
+  geom_col() +
+    facet_wrap(~president, scales = "free") +
+    coord_flip() +
+    theme_minimal() +
+    labs(
+      x = "Bigram",
+      y = "Frequency", 
+      title = "Most Common Bigrams in Presidential Inauguration Speeches", 
+      subtitle = "Last Decade", 
+      fill = "President"
+    )
+
+```
 
 
 
@@ -96,6 +171,5 @@ stopwords_es <- stopwords::stopwords("es",
 ## Sentiment analysis
 
 ## Latent Dirichlet Allocation
-augment() function from the tidytext package to add a column with the number of words in each speech.
 
 ```{r}
