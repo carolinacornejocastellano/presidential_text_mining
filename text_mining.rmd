@@ -182,9 +182,115 @@ top_bigrams <- bigram_counts %>%
 
 top_bigrams
 ```
+The following plot does not show well in the inline preview. Please, click in "Show in New window" button for it to be displayed well:
+
+```{r bigrams plot}
+ggplot(top_bigrams, 
+       aes(x = reorder(bigram, n), 
+           y = n, 
+           fill = president)) +
+  geom_col() +
+  facet_wrap(~ president, 
+             scales = "free") +
+  coord_flip() +
+  scale_fill_manual(values = brewer.pal(10, "BrBG")) +
+  theme_minimal() +
+  ggtitle("Most Common Bigrams in Presidential Speeches", 
+          subtitle = "From 1990 to 2022") +
+  labs(x = "Bigram", 
+       y = "Frequency", 
+       fill = "President") +
+  theme(plot.title = element_text(hjust = 0.5, 
+                                  size = 20, 
+                                  face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, 
+                                     size = 14))
+
+```
 
 
+Now, let's take a look to the most common trigrams:
+
+```{r}
+df_no_stopwords %>%
+  unnest_tokens(trigram,
+                clean_speech,
+                token = "ngrams",
+                n = 3) %>%
+  filter(!is.na(trigram)) %>%
+  count(trigram, sort = TRUE) %>% 
+  head(20)
+```
+```{r}
+trigrams <-  df_no_stopwords %>%
+  unnest_tokens(trigram, 
+                clean_speech, 
+                token = "ngrams", 
+                n = 3)
+
+# trigrams by president
+trigram_counts <- trigrams %>%
+  count(president, 
+        trigram, 
+        sort = TRUE)
+
+# Top bigrams for each president
+top_trigrams <- trigram_counts %>%
+  group_by(president) %>%
+  top_n(1, n) %>%
+  arrange(president)
+
+top_trigrams
+```
+```{r}
+ggplot(top_trigrams, 
+       aes(x = reorder(trigram, n), 
+           y = n, 
+           fill = president)) +
+  geom_col() +
+  facet_wrap(~ president, 
+             scales = "free") +
+  coord_flip() +
+  scale_fill_manual(values = brewer.pal(10, "BrBG")) +
+  theme_minimal() +
+  ggtitle("Most Common Trigrams in Presidential Speeches", 
+          subtitle = "From 1990 to 2022") +
+  labs(x = "Trigram", 
+       y = "Frequency", 
+       fill = "President") +
+  theme(plot.title = element_text(hjust = 0.5, 
+                                  size = 20, 
+                                  face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, 
+                                     size = 14))
+```
+Tres de los cuatro NO fueron elegidos democráticamente, sino que asumieron el cargo de emergencia, no tienen trigrams identificados. Por esa razón, aparecen muchos, imposible de leer.
 
 ## Sentiment analysis
+
+We will perform sentiment analysis using the AFINN lexicon:
+
+```{r}
+# Perform sentiment analysis
+sentiment <- tokenized_speeches %>% 
+  inner_join(get_sentiments("afinn")) %>% 
+  group_by(president) %>% 
+  summarise(sentiment = sum(value))
+
+# Plot sentiment
+sentiment %>% 
+  ggplot(aes(x = reorder(president, sentiment), 
+             y = sentiment, 
+             fill = president)) + 
+  geom_col() + 
+  theme_minimal() + 
+  coord_flip() + 
+  labs(x = "President", 
+       y = "Sentiment", 
+       title = "Sentiment Analysis of Presidential Inauguration Speeches", 
+       subtitle = "Last Decade", 
+       fill = "President")
+```
+
 
 ## Latent Dirichlet Allocation
