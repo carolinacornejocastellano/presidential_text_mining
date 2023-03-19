@@ -11,18 +11,22 @@ This is a project to explore the priorities of Peruvian governments in the last 
 ## Data
 
 ```{r load libraries}
-libraries <- c("tidyverse", 
-               "tidytext", 
-               "wordcloud", 
-               "RColorBrewer", 
-               "reshape2", 
-               "igraph", 
-               "ggraph", 
-               "widyr", 
-               "tm", 
-               "quanteda", 
-               "quanteda.textplots", 
-               "topicmodels")
+libraries <- c(
+  "tidyverse",
+  "tidytext",
+  "textdata",
+  "wordcloud",
+  "RColorBrewer",
+  "reshape2",
+  "igraph",
+  "ggraph",
+  "widyr",
+  "tm",
+  "quanteda",
+  "quanteda.textplots",
+  "topicmodels",
+  "syuzhet"
+)
 
 for (lib in libraries) {
   suppressPackageStartupMessages(library(lib,
@@ -97,8 +101,8 @@ df_no_stopwords <- df %>%
                                  collapse = " "))
 ```
 ```{r}
-df_tokenized <- df %>% 
-  unnest_tokens(word, speech) %>% 
+df_tokenized <- df_no_stopwords %>% 
+  unnest_tokens(word, clean_speech) %>% 
   filter(!word %in% stopwords_es)
 ```
 
@@ -221,6 +225,7 @@ df_no_stopwords %>%
   count(trigram, sort = TRUE) %>% 
   head(20)
 ```
+
 ```{r}
 trigrams <-  df_no_stopwords %>%
   unnest_tokens(trigram, 
@@ -237,11 +242,12 @@ trigram_counts <- trigrams %>%
 # Top bigrams for each president
 top_trigrams <- trigram_counts %>%
   group_by(president) %>%
-  top_n(1, n) %>%
+  top_n(2, n) %>%
   arrange(president)
 
 top_trigrams
 ```
+
 ```{r}
 ggplot(top_trigrams, 
        aes(x = reorder(trigram, n), 
@@ -270,9 +276,9 @@ Tres de los cuatro NO fueron elegidos democráticamente, sino que asumieron el c
 
 We will perform sentiment analysis using the AFINN lexicon:
 
-```{r}
+```{#r}
 # Perform sentiment analysis
-sentiment <- tokenized_speeches %>% 
+sentiment <- df_tokenized %>% 
   inner_join(get_sentiments("afinn")) %>% 
   group_by(president) %>% 
   summarise(sentiment = sum(value))
@@ -292,5 +298,58 @@ sentiment %>%
        fill = "President")
 ```
 
+```{r alternative}
+# Sentiment analysis
+sentiments_spanish <- read.csv("path/to/spanish_sentiment_lexicon.csv",
+  header = TRUE
+)
 
+sentiment_scores <- df_tokenized %>%
+  inner_join(sentiments_spanish, 
+  by = c("word" = "spanish_word")) %>%
+  group_by(president) %>%
+  summarize(sentiment_score = sum(sentiment_value))
+
+# Visualize sentiment scores
+ggplot(sentiment_scores, aes(x = president, y = sentiment_score, fill = president)) +
+  geom_col() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(x = "President", y = "Sentiment Score", title = "Sentiment Analysis of Presidential Speeches")
+```
 ## Latent Dirichlet Allocation
+```{r}
+# Create a Document-Term Matrix (DTM)
+dtm <- df_tokenized %>%
+  count(president, word) %>%
+  cast_dtm(president, word, n)
+
+# LDA model with 5 topics
+lda_model <- LDA(dtm, k = 5)
+
+# Get the probabilities of words per topic
+term_topic_prob <- tidy(lda_model, matrix = "beta")
+
+# Top 10 words per topic
+top_terms <- term_topic_prob %>%
+  group_by(topic) %>%
+  top_n(10, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+# Assign topics to documents
+document_topic_prob <- tidy(lda_model, matrix = "gamma")
+
+# Merge topics with original data
+document_topic_merged <- df_no_stopwords %>%
+  left_join(document_topic_prob,
+    by = c("president" = "document")
+  )
+
+# Find the most probable topic for each president
+president_topics <- document_topic_merged %>%
+  group_by(president) %>%
+  top_n(1, gamma) %>%
+  select(president, topic)
+
+```
