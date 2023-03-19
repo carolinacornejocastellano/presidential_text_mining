@@ -44,10 +44,6 @@ Esta aspiración a una Patria inclusiva es la que abre el camino al
 progreso social. Para hacerla posible nos presentamos ante el pueblo y
 por eso estamos aquí.
 
-1 Fuente: Diario Oficial *El Peruano*, 29 de julio de 2011.
-
-1
-
 Asumo este reto como un desafío y como una promesa que expreso hoy
 ante todos los peruanos, y especialmente ante mis hijos y ante todos
 los niños y niñas del país, que serán el futuro de esta nación. Este
@@ -102,8 +98,6 @@ honrado. Restablecer el valor de la palabra empeñada ante el pueblo
 constituye el eje de la recuperación de un sistema de valores éticos
 inherentes a la República.
 
-2
-
 Sin embargo, transformar el país no es tarea fácil, no solo porque el
 cambio es siempre una tarea de multitudes, sino porque también implica
 enfrentar y superar nuestros problemas, proponer una nueva manera de
@@ -156,8 +150,6 @@ peruano de crecimiento con estabilidad, democracia e inclusión social.
 Tomaremos como ejemplo lo bueno de otras experiencias, pero, como
 decía el amauta José Carlos Mariátegui, no habrá calco ni copia sino
 creación heroica.
-
-3
 
 El mandato al que hicimos referencia exige responsabilidad en la
 conservación de los valores sociales, económicos y culturales de lo
@@ -212,11 +204,7 @@ públicas del gobierno y tendrá un carácter consultivo.
 
 Hacer de la inclusión social una prioridad exige que el conjunto de
 los programas sociales sean agrupados y articulados en un Ministerio
-de Desarrollo y de
-
-4
-
-Inclusión Social, para que el desarrollo pueda llegar efectivamente a
+de Desarrollo y de Inclusión Social, para que el desarrollo pueda llegar efectivamente a
 los que más lo necesitan.
 
 El Programa JUNTOS será extendido progresivamente hasta alcanzar los
@@ -268,8 +256,6 @@ En los próximos 5 años construiremos hospitales en cada una de las 50
 capitales de provincia donde aún faltan. Haremos así realidad nuestro
 compromiso de tener por lo menos un hospital en cada provincia del
 Perú.
-
-5
 
 Los campesinos del Perú y, en general los pobres del campo, serán
 objeto de prioridad. Agrobancocaptará recursos para el otorgamiento de
@@ -324,11 +310,7 @@ combustible barato y accesible a todos.
 
 Insistiremos en la diversificación de la matriz energética a favor del
 gas y las energías renovables e impulsaremos el desarrollo de la
-industria petroquímica. En
-
-6
-
-esa medida, fortaleceremos la regulación y el acceso competitivo a las
+industria petroquímica. En esa medida, fortaleceremos la regulación y el acceso competitivo a las
 fuentes de energía para el transporte, evitando los sobreprecios.
 
 Promoveremos la construcción de hidroeléctricas, fortaleciendo
@@ -381,11 +363,7 @@ ingeniería de las FF.AA.
 
 El gobierno hace eco de la alerta mundial sobre cambio climático y se
 compromete a fortalecer la regulación y dedicarse con seriedad a las
-labores de preservación
-
-7
-
-de nuestra biodiversidad, del recurso hídrico y de los glaciares. Será
+labores de preservación de nuestra biodiversidad, del recurso hídrico y de los glaciares. Será
 una prioridad para nosotros la prevención de desastres.
 
 El gobierno siente que uno de los graves problemas que provoca temor y
@@ -436,8 +414,6 @@ zonas ecológicas. Al mismo tiempo, el Perú podrá tomar la iniciativa
 de una Cumbre Presidencial Regional Antidrogas, con la participación
 de los países productores y consumidores, a cuyos presidentes he
 percibido muy preocupados con este tema.
-
-8
 
 La corrupción es para nosotros un elemento que debilita al Estado y
 afecta su desarrollo. Es, por lo tanto, un problema de seguridad. En
@@ -491,11 +467,7 @@ andinos y sudamericanos.
 
 Nuestra región es inmensa y rica en recursos pero también en historia
 y en culturas comunes. Yo les quiero recordar que nuestra
-independencia fue un
-
-9
-
-proceso regional, donde todos nos hermanamos para lograr nuestra
+independencia fue un proceso regional, donde todos nos hermanamos para lograr nuestra
 libertad y soberanía. La heroica gesta de nuestros próceres, como el
 general don José de San Martín y el Libertador Simón Bolívar, siempre
 conscientes de la urgencia de la unión de los pueblos de América,
@@ -548,5 +520,3 @@ por la unión".
 Muchas gracias a todo el país.
 
 ¡Viva el Perú!
-
-10
