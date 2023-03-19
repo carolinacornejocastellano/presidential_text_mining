@@ -84,15 +84,9 @@ Necesitamos ordenar, estabilizar nuestro frente interno, pero no podemos contrad
 
 Nuestro programa de estabilización económica propicia políticas que ataquen rigurosa e inflexiblemente las causas de la inflación. Vamos a destruir las raíces de este problema como lo prometiéramos, pragmáticamente, sin esclavizar nuestra acción de gobierno a recetas mágicas sacadas de los textos.
 
-Nuestro programa de estabilización se propone reducir las brechas que
-traban nuestro desarrollo social: la brecha fiscal, la brecha externa,
-y algo que muchos olvidan, la brecha de la pobreza.
+Nuestro programa de estabilización se propone reducir las brechas que traban nuestro desarrollo social: la brecha fiscal, la brecha externa, y algo que muchos olvidan, la brecha de la pobreza.
 
-Por otro lado, para que las medidas de estabilización de la economía
-del país, puedan rendir los efectos requeridos es indispensable dictar
-con prontitud medidas de carácter tributario que aseguren una oportuna
-y adecuada recaudación fiscal y financiar las medidas de apoyo social
-a la población de menores recursos.
+Por otro lado, para que las medidas de estabilización de la economía del país, puedan rendir los efectos requeridos es indispensable dictar con prontitud medidas de carácter tributario que aseguren una oportuna y adecuada recaudación fiscal y financiar las medidas de apoyo social a la población de menores recursos.
 
 Por tanto, solicito al Congreso de la República, que al amparo del
 artículo 188 de la Constitución Política del Perú, otorgue al Poder
@@ -125,8 +119,6 @@ requiere incorporar una serie de dispositivos tal como una ley para la
 inscripción simplificada de empresas, instituciones y sociedades en
 los Registros Públicos y las normas sobre unificación y simplificación
 de registros para acceder a la empresa formal.
-
-6
 
 De otra parte, resulta revelador que la Población Económicamente
 Activa (PEA) de 7'200,00 que constituye un tercio de la población,
@@ -179,11 +171,7 @@ En los últimos años se ha incrementado enormemente el contingente
 burocrático tanto en el Gobierno Central como en la empresas públicas.
 Lo que es peor, dicho personal ni siquiera ha sido empleado
 adecuadamente para trabajos productivos o de algún rendimiento social.
-Existen entidades en las
-
-7
-
-que se ha producido una superpoblación de trabajadores administrativos
+Existen entidades en las que se ha producido una superpoblación de trabajadores administrativos
 y en otras el Estado carece de una presencia real y afectiva.
 
 Mi gobierno tiene el más firme propósito de poner en marcha un serio
@@ -234,11 +222,7 @@ déspota y abusivo que ha tenido que padecer nuestra sociedad.
 Que pueblo tan indigno sería el nuestro si hubiera permanecido
 impasible frente al atropello y el abuso. Para mal del Perú toda esa
 fuerza, esa protesta lógica ha sido canalizada por ideologías
-fanáticas que intentan destruir el
-
-8
-
-sistema de democracia representativa. Sólo la eliminación definitiva
+fanáticas que intentan destruir el sistema de democracia representativa. Sólo la eliminación definitiva
 de la injusticia y la marginación puede acabar con la subversión. Por
 ello mi gobierno dará efectiva prioridad al desarrollo de las zonas
 andinas y de la selva de nuestro país, hoy convulsionadas por el
@@ -292,8 +276,6 @@ deprimidas. Incrementaremos la policía femenina especializada para
 atender los casos de la mujer dentro de las acciones de seguridad
 pública.
 
-9
-
 Cabe aquí hacer una mención muy importante al rol que juegan las
 mujeres peruanas de los sectores populares en la conducción de los
 clubes de madres. Es mi propósito más decidido otorgarle el apoyo a
@@ -324,7 +306,7 @@ instrumento que contempla los derechos humanos específicos de la
 infancia y asumirá luego de su ratificación por parte de los países
 miembros de las Naciones Unidas la categoría de tratado internacional.
 
-**DERECHOS HUMANOS**
+DERECHOS HUMANOS
 
 El irrestricto respeto y promoción de los derechos humanos será una
 firme línea de acción de mi Gobierno. Creemos que la situación de
@@ -346,11 +328,7 @@ toda nuestra acción gubernamental. Este enfoque considerará al
 ciudadano ya sea productor o consumidor, agresor o agredido, autoridad
 o subalterno y a las relaciones entre éstos, como sujetos de derecho e
 individuos que merecen, cada uno de ellos, ser medidos con la misma
-vara de la justicia y de la equidad,
-
-10
-
-y que requieren, para realizarse como personas integrales y ciudadanos
+vara de la justicia y de la equidad, y que requieren, para realizarse como personas integrales y ciudadanos
 plenos, de la libre elección de oportunidades igualitariamente
 ofrecidas.
 
