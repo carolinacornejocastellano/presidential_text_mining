@@ -1,13 +1,3 @@
-Señor Presidente del Congreso de la República;\
-Señor Presidente del Poder Judicial;\
-Su eminencia Cardenal Primado;\
-Señora Vicepresidenta de la República;\
-Señores Vicepresidentes del Congreso;\
-Señoras y señores Congresistas;\
-Señores titulares de los órganos constitucionales autónomos; Señores
-miembros del Cuerpo Diplomático;\
-Señoras y señores:
-
 Queridos hermanos peruanos, me dirijo a ustedes en este difícil
 momento que atraviesa el país para transmitirles mi más absoluto
 compromiso y lealtad para con nuestro amado Perú y con su
@@ -41,15 +31,13 @@ alguna debemos aportar y apoyar ese deseo, uniéndonos con la firme
 promesa de solucionar los problemas que se presenten y dejar de lado
 las diferencias políticas.
 
-1 El Presidente Constitucional de la República ingeniero Pedro Pablo
+El Presidente Constitucional de la República ingeniero Pedro Pablo
 Kuczynski Godard renunció a la Presidencia. El Congreso de la
 República aceptó su renuncia a través de la Resolución Legislativa del
 Congreso N° 008-2017-2018/CR, del 23 de marzo de 2018. Al día
 siguiente juramentó en su reemplazo el hasta entonces Primer
 Vicepresidente de la República ingeniero Martín Alberto Vizcarra
 Cornejo, luego de lo cual dio lectura al presente discurso.
-
-1
 
 En unos días, cuando esté constituido el nuevo gabinete, que será
 completamente nuevo, el o la Presidenta del Consejo de Ministros dará
@@ -103,11 +91,7 @@ aquello que no se ha realizado hasta ahora.
 
 Sabemos que, para crecer, nuestro país debe ser cada vez más
 competitivo y generar empleo de calidad para todos los peruanos, sin
-distingo de edades y
-
-2
-
-género. Por eso, fomentaremos la inversión privada, la iniciativa de
+distingo de edades y género. Por eso, fomentaremos la inversión privada, la iniciativa de
 los emprendedores y apoyaremos a nuestras pequeñas y medianas
 empresas.
 
@@ -162,11 +146,7 @@ sin guardarnos nada. ¡El Perú primero!
 
 La educación no puede esperar, la salud no puede esperar, las regiones
 de nuestro país no pueden esperar. Pero, sobre todo, cada uno de los
-32 millones
-
-3
-
-de peruanos no puede esperar, porque no debemos olvidar que nuestra
+32 millones de peruanos no puede esperar, porque no debemos olvidar que nuestra
 mayor meta es que nuestros hijos y los hijos de nuestros hijos vivan
 en un país mejor. El Perú está primero.
 
@@ -182,5 +162,3 @@ trabajemos por el bien del país, no hay tiempo que perder.
 
 Un abrazo fuerte para todos. Dios bendiga a nuestro país y que ¡viva
 el Perú!
-
-4

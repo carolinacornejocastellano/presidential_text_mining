@@ -47,8 +47,6 @@ con certeza y profunda convicción de futuro que no hay lugar para el
 desánimo y la duda, no hay lugar para perder la esperanza en el Perú
 que hoy ingresa al siglo XXI.
 
-1
-
 Desde Tacna hasta Tumbes, en la Costa, en la Sierra y en la Selva, se
 siente el anhelo profundo de un país que quiere levantarse sobre sus
 dolores y aprender de su pasado reciente para no repetir errores. Se
@@ -105,11 +103,7 @@ todavía se hallan excluidos y marginados dentro de su propio país.
 
 Ante este cuadro de dramática pobreza digo ahora, como Presidente, que
 no puedo cerrar mis ojos ni mi corazón. Si juntos fuimos capaces de
-construir un
-
-2
-
-camino democrático para resolver la grave crisis que enfrentaba
+construir un camino democrático para resolver la grave crisis que enfrentaba
 nuestro país, tengo ahora la firme convicción de que juntos podemos
 encontrar el camino para derrotar a la pobreza y asegurar la
 modernización del Estado, para hacer que la economía crezca
@@ -166,8 +160,6 @@ Tenemos muchos problemas, hermanas y hermanos, y los vamos a
 enfrentar; pero hay uno principal que hoy adquiere características
 sumamente graves, pues destruye esperanzas, familias, personas y
 genera más pobreza.
-
-3
 
 Durante la campaña electoral presentamos al país un Plan de Gobierno
 elaborado y constituido por un equipo de profesionales sólido y
@@ -227,8 +219,6 @@ económicamente activa. Se estimularán la formalización de las
 empresas, la capacitación y el desarrollo tecnológico y la innovación,
 la búsqueda de mercados, el apoyo a la
 
-4
-
 comercialización y la articulación con la gran empresa. El
 acercamiento de los servicios del Estado y las líneas de créditos
 preferenciales a este sector, serán una prioridad.
@@ -277,19 +267,9 @@ Dentro de este esquema, es prioridad para mi gobierno la adecuación de
 las normas y los derechos laborales de los trabajadores a los acuerdos
 que hemos asumido con la Organización Internacional del Trabajo.
 
-  -----------------------------------------------------------------------------------------------
-  Consideraremos   como     interlocutores   válidos   y        trascendentes   a        las
-  ---------------- -------- ---------------- --------- -------- --------------- -------- --------
-
-  -----------------------------------------------------------------------------------------------
-
-organizaciones de los trabajadores y a los gremios empresariales, a
+Consideraremos como interlocutores válidos y trascendentes a las organizaciones de los trabajadores y a los gremios empresariales, a
 fin de que juntos impulsemos el desarrollo justo y equitativo. Por
-ello, anuncio que es
-
-5
-
-propósito de mi gobierno consolidar el Consejo Nacional del Trabajo y
+ello, anuncio que es propósito de mi gobierno consolidar el Consejo Nacional del Trabajo y
 Promoción Social.
 
 Amigas y amigos, necesitamos construir y profundizar el reencuentro
@@ -345,8 +325,6 @@ objetivos, necesitamos de un Estado eficaz que esté abierto a la
 gente. Vamos a reorganizar y descentralizar el Estado para hacer que
 aún con pocos recursos logremos atender a los marginados del Perú.
 
-6
-
 Anuncio, hoy día, la creación de una institución autónoma y con
 capacidad gerencial que tendrá la responsabilidad de coordinar todas
 las acciones del Estado para enfrentar la lucha contra la pobreza. La
@@ -399,8 +377,6 @@ contra el narcotráfico no como un cálculo en las relaciones de poder,
 sino como un imperativo ético, en la doble vertiente de luchar contra
 todos los delitos conexos al narcotráfico y, a la vez, devolver a los
 campesinos productores la dignidad de un trabajo que los dignifique.
-
-7
 
 Desde la perspectiva de nuestros objetivos más específicos aplicaremos
 una diplomacia integral, que actúe simultáneamente en los sectores
@@ -455,16 +431,8 @@ futuras, hoy los invito, con firmeza y humildad, a que dejemos de
 gastar más en armas para invertir más en educación y para ganar la
 lucha contra la pobreza.
 
-8
-
 Hay que trabajar activa y concertadamente para fortalecer nuestra
-
-  --------------------------------------------------------------------------------------------
-  institucionalidad   democrática   e        impulsar   un       profundo   proceso   de
-  ------------------- ------------- -------- ---------- -------- ---------- --------- --------
-
-  --------------------------------------------------------------------------------------------
-
+institucionalidad democrática e impulsar un profundo   proceso   de
 descentralización que vigorice nuestros gobiernos locales.
 
 Soy un provinciano y soy un rebelde con causa contra el centralismo.
@@ -515,11 +483,7 @@ lavado de dinero.
 
 Me comprometo, ante esta institución, que protegeré el papel de cada
 una de las instituciones del Estado. La separación de poderes será una
-realidad: el
-
-9
-
-Poder Legislativo será respetado y el Poder Judicial hará la justicia
+realidad: el Poder Legislativo será respetado y el Poder Judicial hará la justicia
 que demanda el Perú.
 
 Para nosotros, no hay democracia sin libertad irrestricta de prensa y
@@ -570,11 +534,7 @@ caminar juntos hacia el cambio; hoy vuelvo a extender mis brazos para
 construir juntos y en concertación el futuro de nuestra Nación, con
 trabajo, con justicia social, con tolerancia y respeto por nuestra
 diversidad y nuestra cultura. La sociedad que queremos exige terminar
-con toda forma de discriminación. La promesa de
-
-10
-
-la vida peruana significa, en el nuevo milenio, la profunda convicción
+con toda forma de discriminación. La promesa de la vida peruana significa, en el nuevo milenio, la profunda convicción
 de que el cambio en el Perú es posible.
 
 Hermanos y hermanas del Perú, al terminar este mensaje quiero
@@ -603,5 +563,3 @@ amigos, los invito a que juntos hagamos realidad nuestro sueño.
 El Perú nos espera.
 
 Muchas gracias.
-
-11

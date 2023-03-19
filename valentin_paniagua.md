@@ -49,11 +49,7 @@ Este cuadro, que desde luego resulta abrumador, no justifica pesimismo
 alguno. La patria, que está por encima y más allá de cualesquiera
 contingencias, conserva intactas sus reservas morales y se expresa,
 ahora, en una ansia inequívoca de cambio. El Congreso no ha sido ni
-debe ser la
-
-1
-
-excepción. El acto democrático al que hemos asistido hoy es una
+debe ser la excepción. El acto democrático al que hemos asistido hoy es una
 apuesta firme y resuelta por la recuperación ética y el saneamiento
 institucional del país. Y, por eso mismo, saludo a mi ilustre
 contendor, el doctor Ricardo Marcenaro, y a quienes lo han respaldado
@@ -107,5 +103,3 @@ Debo expresar mi reconocimiento y gratitud a la Mesa Directiva que nos
 precedió, por la forma en que condujo este proceso electoral, limpio y
 transparente, conforme corresponde a una institución democrática como
 es el Congreso de la República.
-
-2

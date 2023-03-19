@@ -1,13 +1,3 @@
-Muy buenos días a todos.
-
-Señora Presidenta del Congreso;\
-Excelentísimos Jefes de Estado que nos acompañan hoy; Vicepresidentes
-de países que han venido;\
-Embajadores, Congresistas y autoridades constitucionales; Cardenal,
-Majestad;
-
-Conciudadanos:
-
 Me presento ante el país, según el mandato de nuestra Constitución, no
 a rendir cuenta, como haré en los siguientes años, sino a inaugurar el
 mandato que ustedes me han encomendado. Tengo, pues, un mensaje lleno
@@ -44,10 +34,6 @@ un siglo, como reducir drásticamente el analfabetismo o erradicar
 enfermedades contagiosas y discapacitantes, gracias a la vacunación.
 Los avances son innegables, pero todos lo sabemos: se necesita más,
 mucho más.
-
-1 Fuente: Diario de los Debates del Congreso de la República.
-
-1
 
 Debo reconocer los esfuerzos de todos mis antecesores, pero sobre todo
 quiero recordar a un gran demócrata: al Presidente Fernando Belaúnde
@@ -102,8 +88,6 @@ civilización. Doscientos años de República y miles de años de
 historia, y una parte de esta historia, nuestra raíz civilizatoria y
 cultural, ha sido despreciada y marginada. Eso debe cambiar. Está
 cambiando, pero debe cambiar más rápido y más profundamente.
-
-2
 
 Ser un país moderno significa tener igualdad de oportunidades para
 ambos géneros. Esto significa respeto irrestricto a la dignidad de la
@@ -161,9 +145,6 @@ Ahí están los heroicos médicos, enfermeras, obstetras y todo el
 personal de salud pública, haciendo a veces su trabajo en condiciones
 dificilísimas, el trabajo de salvar vidas. Con ellos estaremos con la
 determinación de mejorar sus
-
-3
-
 condiciones de trabajo y sus remuneraciones, y así poder contar con
 ellos en los lugares más remotos de este gran país, adonde el Estado a
 veces no llega.
@@ -217,8 +198,6 @@ entregados al sistema de justicia reformado.
 
 Tenemos un buen plan y un excelente equipo para ejecutarlo. Un aplauso
 para los miembros del Gabinete. Levántense para que los vean.
-
-4
 
 Necesitamos que la Policía sepa que todas las reformas se harán para
 hacer más honorable esa institución, y que también sepa que tenemos fe
@@ -274,11 +253,7 @@ calidad.
 
 Sé que es difícil formalizar, pero tenemos un plan para hacerlo por
 tramos. El Programa Tu Empresa generará una verdadera revolución de
-acceso al crédito
-
-5
-
-formal reduciendo los altos costos que enfrentan las empresas que hoy
+acceso al crédito formal reduciendo los altos costos que enfrentan las empresas que hoy
 generan la mayor parte del trabajo en el Perú.
 
 He prometido que para el término de mi mandato por lo menos 60% de los
@@ -331,27 +306,26 @@ Organización de Cooperación y Desarrollo Económico (OCDE). Y nuestro
 Plan de Gobierno coincide totalmente con los objetivos de desarrollo
 sostenible de la Agenda de las Naciones Unidas para el año 2030.
 
-6
-
 Estos son, pues, en resumen, mis compromisos de Estado:
 
-1\. Llevar agua y desagüe a todos los peruanos.
+1. Llevar agua y desagüe a todos los peruanos.
 
-2\. Prestar un servicio de educación pública de calidad que abra el
+2. Prestar un servicio de educación pública de calidad que abra el
 mundo a millones de jóvenes.
 
-3\. Prestar un servicio de salud pública sensible al enfermo, oportuno
-y eficaz. 4. Formalizar el país hasta el máximo posible.
+3. Prestar un servicio de salud pública sensible al enfermo, oportuno
+y eficaz. 
 
-5\. Construir infraestructura para el desarrollo, que con tanta
+4. Formalizar el país hasta el máximo posible.
+
+5. Construir infraestructura para el desarrollo, que con tanta
 urgencia necesitamos.
 
-6\. Y, finalmente, liberar a nuestra patria de la corrupción, de la
+6. Y, finalmente, liberar a nuestra patria de la corrupción, de la
 discriminación, de la inseguridad, del delito, luchando con toda
 transparencia contra estos flagelos históricos.
 
-En pocos días mi Presidente del Consejo de Ministros ---¡levántate,
-por favor! --- y su Gabinete se presentarán ante este Congreso de la
+En pocos días mi Presidente del Consejo de Ministros y su Gabinete se presentarán ante este Congreso de la
 República para solicitar su confianza en base a nuestro Plan de
 Gobierno. Este plan requiere algunas medidas legislativas para
 reactivar el crecimiento sostenido de la economía, poner las bases
@@ -379,10 +353,6 @@ sueño republicano que hace casi 200 años tuvieron para todos nosotros
 los fundadores de la independencia del Perú.
 
 Repito aquí, hoy, la frase que fundó nuestra patria: "Una sola
-República, firme y
-
-feliz por la unión".
+República, firme y feliz por la unión".
 
 ¡Viva el Perú!
-
-7

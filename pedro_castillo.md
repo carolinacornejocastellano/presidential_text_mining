@@ -1,12 +1,3 @@
-Señora Presidenta del Congreso de la República\
-Señores y señoras congresistas de la República,\
-Señores Presidentes de las hermanas repúblicas de Argentina, Bolivia,
-Chile, Colombia, Ecuador, México, su Alteza el Rey de España.
-
-Señores miembros del honorable cuerpo diplomático.
-
-Autoridades presentes.
-
 Mujeres y hombres de mi amado pueblo peruano.
 
 Comienzo saludando a mis hermanos descendientes de los pueblos
@@ -50,9 +41,6 @@ habitantes indígenas de este rico país.
 
 Cuarenta años después, la independencia del Virreinato del Perú de
 España en 1821 no trajo consigo una mejora real para la mayoría de
-
-2
-
 los peruanos; los denominados aborígenes continuaron siendo explotados
 como ciudadanos de segunda categoría para el erario de la flamante
 República del Perú. Con el tiempo a la antigua comunidad afroperuana
@@ -82,8 +70,6 @@ Desde entonces, nuestro país ha creído en diversos gobiernos que
 accedieron al poder gracias al voto popular, que sin embargo
 defraudaron.
 
-3
-
 Esta vez un gobierno del pueblo ha llegado para gobernar con el pueblo
 y para el pueblo, para construir de abajo hacia arriba. Es la primera
 vez que nuestro país será gobernado por un campesino, una persona que
@@ -108,13 +94,10 @@ estoy aquí para que esta historia no sea más la excepción.
 Quiero que sepan que tienen mi palabra:\
 No los defraudaremos. Yo no lo defraudaré.
 
-**NUESTRA LINEAS POLITICAS**
+NUESTRA LINEAS POLITICAS
 
-**La lucha contra pandemia del Covid-19, PRESERVAR LA VIDA Y LA
-SALUD.**
-
-4
-
+La lucha contra pandemia del Covid-19, PRESERVAR LA VIDA Y LA
+SALUD.
 
 Nuestra primera gran tarea es continuar la lucha contra la pandemia
 del Covid-19, que tanto ha golpeado a nuestro país. En esta fecha, no
@@ -147,11 +130,7 @@ especializados por región, entre los cuales priorizaremos: hospital
 materno-infantil, hospital neoplásico, hospital clínico quirúrgico,
 hospital de medicina tropical y hospital de salud bucal. Para poder
 llevar la salud a todos los peruanos, tenemos que trabajar
-articuladamente entre todos
-
-5
-
-los niveles de gobierno, cada uno desde su función. Por eso, invoco a
+articuladamente entre todos los niveles de gobierno, cada uno desde su función. Por eso, invoco a
 los gobernadores regionales a elaborar sus expedientes y ubicar los
 terrenos donde se construirán estos hospitales.
 
@@ -173,7 +152,7 @@ que el país necesita y descentralizaremos los recursos humanos del
 sector. Y a todos los peruanos y peruanas les digo que su salud y
 bienestar es nuestra prioridad.
 
-**La reactivación económica**
+La reactivación económica
 
 En los últimos 30 años se ha discutido mucho sobre las falencias del
 modelo económico implementado en los 90. A pesar de ello, ningún
@@ -182,8 +161,6 @@ realizar los cambios anhelados por la población. Pero la pandemia
 terminó por visibilizar que las críticas que se le hacían al modelo
 económico no solo eran legítimas, eran también válidas. Hoy la
 población pide cambios y no está dispuesta a renunciar a ellos.
-
-6
 
 Ahora bien, ¿es cierto que esos cambios implican poner en riesgo los
 logros conseguidos con el esfuerzo de todos los peruanos durante las
@@ -217,9 +194,6 @@ financieras cobran hasta 200% por créditos de consumo. Así, por
 ejemplo, el Banco de la Nación deberá estar en capacidad de
 proporcionar al ciudadano, todos los servicios bancarios disponibles,
 con tasas de utilidad razonables, que les permitan competir en este
-
-7
-
 mercado con eficacia, pero sin usura. No pretendemos ni remotamente
 estatizar nuestra economía ni hacer una política de control de
 cambios. Solo queremos que la economía de las familias, sobre todo las
@@ -238,8 +212,8 @@ pero paradójicamente no vemos preso a ningún empresario. Algunos lo
 estuvieron unos días, pero ahora ya están libres y hasta fuera del
 país. Esto no es correcto.
 
-**La promoción de la Inversión y una nueva forma de hacer proyectos en
-el Perú**
+La promoción de la Inversión y una nueva forma de hacer proyectos en
+el Perú
 
 El Perú es un país de milenaria tradición minera y agrícola; todas las
 culturas que florecieron en el territorio nos han dejado muestra de su
@@ -250,8 +224,6 @@ energía e hidrocarburos.
 Implementaremos el criterio de rentabilidad social, que es superior a
 la licencia social. Esto significa que todo proyecto debe contribuir,
 entre otros, con:
-
-8
 
 • Dinamizar la economía local, regional y nacional. Es decir, generar
 "movimiento" como se dice coloquialmente.
@@ -279,16 +251,13 @@ deben acondicionarse a cada escenario y no al revés. Los pueblos y las
 organizaciones territoriales deben participar activamente en la
 gestión de SU desarrollo.
 
-**Si un proyecto NO tiene rentabilidad social, simplemente NO VA**.
+Si un proyecto NO tiene rentabilidad social, simplemente NO VA.
 
-Esto significa un **nuevo pacto con los inversores privados**, donde
+Esto significa un nuevo pacto con los inversores privados, donde
 el Estado intervenga para reducir costos, facilitar procesos, mantener
 la seguridad jurídica, y a cambio la población local y el país reciban
 contribuciones que generen desarrollo y mayores oportunidades con un
 real cuidado del medio ambiente.
-
-9
-
 
 Se promoverá la participación del estado, como la hacen todos los
 países de la región como socio o ejecutor mayoritario.
@@ -298,11 +267,11 @@ necesita una nueva forma de hacer minería en su territorio. En un
 escenario de paz con justicia social. Donde cada pueblo sea
 protagonista de su destino.
 
-**PRINCIPALES ACCIONES A DESARRROLLAR**
+PRINCIPALES ACCIONES A DESARRROLLAR
 
 En mi gestión iniciaremos lo siguiente:
 
-**EN SALUD**
+EN SALUD
 
 • Frente a una tercera ola de contagios, tenemos a la fecha un 16% de
 la población vacunada con dos dosis y un primer nivel de atención muy
@@ -316,8 +285,6 @@ acciones ante la pandemia.
 • Los centros y postas de salud garantizarán la atención médica,
 laboratorio y exámenes con real gratuidad, sean o no asegurados.
 
-10
-
 • Se dispondrán las medidas para ampliar los horarios de atención para
 pacientes no Covid hasta 12 horas. en los establecimientos del
 ministerio de Salud y la Seguridad Social.
@@ -327,7 +294,7 @@ vacunatones, ampliando horarios y extendiendo su presencia a las zonas
 más populosas de las capitales. Los establecimientos de primer nivel
 vacunarán en horario extendido.
 
-**EN ECONOMIA**
+EN ECONOMIA
 
 De manera inmediata, para crear un millón de empleos en un año,
 nuestro gobierno implementará las siguientes medidas:
@@ -347,17 +314,11 @@ centros poblados
 • 700 millones de soles para el programa **Trabaja Perú** de pequeñas
 obras municipales intensivas en empleo.
 
-11
-
 • Transferencia directa e inmediata de apoyo financiero de
-
 700 soles a cada familia vulnerable. Dado que la pandemia
-
 ha generado muchos costos en educación y salud a las familias, y a eso
 ahora se ha sumado en el último mes del
-
 gobierno anterior un alza de precios que afecta la
-
 alimentación familiar.
 
 Los programas de facilidades de crédito realizados de manera
@@ -366,29 +327,24 @@ sectores empresariales durante la pandemia, pero excluyendo a las
 mayorías, al agro, las pymes y los consumidores. Por ello, queremos
 sostenerlos y ampliarlos. En este sentido:
 
-o Ampliaremos los periodos de gracia y facilitaremos la reprogramación
+- Ampliaremos los periodos de gracia y facilitaremos la reprogramación
 de deudas a las MYPES.
 
-o Lanzaremos un nuevo programa de crédito orientado específicamente a
+- Lanzaremos un nuevo programa de crédito orientado específicamente a
 la protección del empleo.
 
-o Y le daremos especial atención y prioridad a los sectores más
+- Y le daremos especial atención y prioridad a los sectores más
 afectados por la pandemia:\
- Agro\
- Pymes\
- Turismo\
+ Agro
+ Pymes
+ Turismo
  Transportes
 
-**EDUCACIÓN**\
+EDUCACIÓN
 Por las razones expuestas mi gobierno, que es el gobierno del
-
 pueblo y para el pueblo, declararemos de inmediato la educación
-
 pública en estado de emergencia, para recuperar los aprendizajes
-
 y evitar que la falta de equidad siga creciendo.
-
-12
 
 Esto nos lleva a plantear un conjunto de medidas que paso a detallar:
 
@@ -414,11 +370,7 @@ Infantil Temprano.
 • A más tardar en el primer semestre del año 2022, nuestras escuelas
 volverán a la actividad presencial. Para ello garantizaremos la
 vacunación de todos los maestros, promotores, auxiliares y personal de
-los servicios
-
-13
-
-educativos, la adopción de medidas de bioseguridad en todas las
+los servicios educativos, la adopción de medidas de bioseguridad en todas las
 instituciones y programas educativos.
 
 • Promoveremos la revalorización de la carrera docente; garantizando
@@ -444,11 +396,7 @@ Curriculares promovidos por los maestros, estudiantes, padres de
 familia y comunidad.
 
 • La innovación será una prioridad en las escuelas y la conectividad a
-Internet un derecho. Inicialmente
-
-14
-
-trabajaremos en 800 instituciones educativas habilitadas para la
+Internet un derecho. Inicialmente trabajaremos en 800 instituciones educativas habilitadas para la
 secundaria técnica.
 
 • En la escuela garantizaremos la alimentación en los niveles inicial,
@@ -469,14 +417,10 @@ básica. También la formación técnica de los estudiantes en los últimos
 • Se destinará 1000 millones de soles hasta diciembre para el pago de
 la deuda social del magisterio.
 
-**MINERÍA**
+MINERÍA
 
 • Poner orden en la minería. Esto significa, reglas claras, escenarios
-sin sorpresas para los actores. Utilizando las
-
-15
-
-buenas prácticas que se dan en otros escenarios, expulsando a la
+sin sorpresas para los actores. Utilizando las buenas prácticas que se dan en otros escenarios, expulsando a la
 corrupción, sincerando y acotando procedimientos que faciliten la
 exploración, la explotación, el control y el cierre adecuado de cada
 proyecto.
@@ -504,9 +448,6 @@ vigilante de la sociedad civil organizada y al mismo tiempo combatir
 el cáncer de la corrupción. Se facilitará a la población el acceso al
 programa nacional Techo Propio y ampliaremos significativamente el
 número de beneficiarios. La esperanza de cientos de miles de familias
-
-16
-
 para acceder a un techo propio a partir de hoy empieza a hacerse
 realidad. Además, promoveremos la formalización de predios rurales y
 urbanos a través de un trabajo conjunto con los gobiernos locales,
@@ -514,7 +455,7 @@ para ello se simplificará la normativa sobre titulación de predios y
 se firmarán convenios interinstitucionales para realizar el
 levantamiento catastral urbano en menos tiempo.
 
-**PRODUCCIÓN**
+PRODUCCIÓN
 
 • Promoveremos y reconoceremos a las Industrias e inversiones que
 tengan rentabilidad social, con políticas específicas para la gran
@@ -535,9 +476,6 @@ consumo, y la acuicultura.
 
 • Promoveremos la micro y pequeña empresa de acuicultura y la
 implementación de parques industriales acuícolas, la
-
-17
-
 producción de anchoveta en salazón, charqui y embutidos con los
 pescadores artesanales y el reflote de nuestra industria para
 abastecer a nuestros programas de asistencia alimentaria.
@@ -562,9 +500,7 @@ industrialización nacional y diversificación productiva, que permitirá
 una mayor competitividad y dará valor agregado a nuestras materias
 primas en cada territorio.
 
-**AGRICULTURA Y DESARROLLO RURAL**
-
-18
+AGRICULTURA Y DESARROLLO RURAL
 
 • Hambre y desnutrición cero, con salud y reactivación económica,
 promoviendo el consumo de productos sanos ecológicos; para ello
@@ -591,63 +527,39 @@ equipos y tecnología de punta a los agricultores organizados.
 • La inmediata puesta en marcha del plan nacional de Repoblamiento
 Ganadero, que devolverá productividad a más de 1,7 millones de
 familias ganaderas en Costa, Sierra y Selva. El mejor modo de combatir
-la anemia será
-
-19
-
-permitiendo que nuestros hijos coman proteínas de gran
-
+la anemia será permitiendo que nuestros hijos coman proteínas de gran
 calidad y ricas en hierro.
 
 • Priorizar los proyectos de irrigación, asimismo proyectos de
-
 siembra y cosecha de agua para integrarnos a los mercados
-
 internacionales. Aprovecharemos nuestra biodiversidad
-
 para el desarrollo productivo agrario e industrial.
 
-**MUJER Y POBLACIONES VULNERABLES**
+MUJER Y POBLACIONES VULNERABLES
 
 • Programa Nacional Mujer emprendedora que otorgue
-
 créditos accesibles para dinamizar la economía familiar,
-
 para enfrentar las consecuencias económicas de la
-
 pandemia que ha ubicado a las mujeres en empleos
-
 informales, vulnerables, y sin protección social.
 
 • Impulsar el Sistema Nacional de Cuidados de personas
-
 dependientes -niñas, niños, personas adultas mayores,
-
 personas con discapacidad- dado que 98 mil niños peruanos
-
 han perdido a uno de sus cuidadores como víctima de la
-
 pandemia.
 
 • En adelante por los niños y niñas del Perú, el estado asumirá
-
 el financiamiento de la rehabilitación integral de las víctimas
-
 de violencia sexual.
 
 • Fortaleceremos el Sistema Nacional Especializado de
-
 Justicia para la protección y sanción de la violencia contra
-
-las mujeres e integrantes del grupo familiar. Solo de forma
-
-20
-
-articulada y coordinada se logrará la protección y acceso real a la
+las mujeres e integrantes del grupo familiar. Solo de forma articulada y coordinada se logrará la protección y acceso real a la
 justicia para las víctimas.
 
-**MINISTERIO DE CIENCIA Y TECNOLOGÍA Y LA CARRERA DEL INVESTIGADOR
-CIENTÍFICO**
+MINISTERIO DE CIENCIA Y TECNOLOGÍA Y LA CARRERA DEL INVESTIGADOR
+CIENTÍFICO
 
 Por nuestro bajo nivel en Ciencia, Tecnología e Innovación, las
 exportaciones correspondientes al año 2019 estuvieron compuestas por
@@ -672,16 +584,11 @@ conocimientos ancestrales y generar nuevos a partir de la
 investigación; y disponer y promover un universo de profesionales
 destacados en este campo, nunca podrá alcanzar los niveles de
 desarrollo requeridos para distribuir adecuadamente entre su población
-los servicios públicos elementales,
-
-21
-
-
-como son la seguridad alimentaria, la vivienda adecuada, el transporte
+los servicios públicos elementales, como son la seguridad alimentaria, la vivienda adecuada, el transporte
 público eficiente y una educación y un sistema de salud pública
 pertinentes y de calidad.
 
-**PETROPERU**
+PETROPERU
 
 PETROPERU participara en todos los aspectos de la industria petrolera,
 la exploración y explotación de los yacimientos de petróleo y gas
@@ -693,7 +600,7 @@ de subsidios públicos, pues esta empresa deberá participar plenamente
 en el mercado con sus recursos propios, pero con una tasa de ganancia
 razonable y sin ningún tipo de abuso.
 
-**Estamos dispuestos a recuperar la soberanía** sobre todos nuestros
+Estamos dispuestos a recuperar la soberanía sobre todos nuestros
 recursos naturales porque muchos, hoy en día, están en manos
 extranjeras, con contratos que tienen garantía de estabilidad
 tributaria. Esa es una de las razones principales que nos obligan a
@@ -701,16 +608,13 @@ buscar una nueva Constitución Política que, entre otras cosas, permita
 adecuar los contratos a las cambiantes circunstancias del mercado
 internacional, garantizando los ingresos del Estado.
 
-**LA RONDAS Y LA SEGURIDAD CIUDADANA**
+LA RONDAS Y LA SEGURIDAD CIUDADANA
 
 Sabemos que la seguridad ciudadana es uno de los problemas más
 sentidos por la población. La Policía Nacional es el pilar sobre el
 cual la actividad pública lucha contra este mal, pero eso no es
 suficiente. A pesar de los esfuerzos que se realizan en este campo
-siguen
-
-22
-campeando las pandillas, las bandas y los robos callejeros, las
+siguen campeando las pandillas, las bandas y los robos callejeros, las
 agresiones a la integridad física de las personas y a sus vidas.
 Nosotros creemos que **debemos expandir el sistema de las Rondas**,
 que no es otra cosa que la población organizada para dar seguridad a
@@ -732,7 +636,7 @@ Los delincuentes extranjeros tendrán 72 horas de plazo a para salir
 del país. Finalmente, los jóvenes que no estudian ni trabajan deberán
 acudir al servicio militar.
 
-**DEFENSA: UN NUEVO ROL PARA LAS FUERZAS ARMADAS**
+DEFENSA: UN NUEVO ROL PARA LAS FUERZAS ARMADAS
 
 Ciertamente nuestras fuerzas armadas tienen, como se establece en el
 Artículo 165° de la Constitución, la finalidad primordial de
@@ -740,28 +644,24 @@ garantizar la independencia, la soberanía y la integridad territorial
 de la República. Sin embargo, en tiempos de paz, nada impide que los
 equipos, el personal técnico y, en general, todo el personal
 disponible pueda participar en la ejecución de proyectos de
-desarrollo, como caminos,
-
-23
-
-obras de ingeniería, represas, etc. Consideramos que esto es no solo
+desarrollo, como caminos, obras de ingeniería, represas, etc. Consideramos que esto es no solo
 posible sino necesario. Esta función está normada en el Art. 171 de la
 Constitución, pero se ha restringido por razones políticas.
-**Volveremos a encargar a las FFAA la participación de algunos
-importantes proyectos de desarrollo.** Este será uno de los cambios
+Volveremos a encargar a las FFAA la participación de algunos
+importantes proyectos de desarrollo. Este será uno de los cambios
 que impulsaremos desde el poder ejecutivo.
 
 • Reforzaremos la institucionalidad de las fuerzas armadas teniendo
 presente la meritocracia, antes que el amiguismo para los ascensos.
 
 • Promoveremos el ingreso al servicio militar voluntario con la
-creación del programa "**Ingresa a servir a tu patria y** **asegura**
-**tu** **preparación** **para** **el** **futuro**".
+creación del programa "Ingresa a servir a tu patria y asegura
+tu preparación para el futuro".
 
 • Fortaleceremos el equipo de las Fuerzas Armadas para que puedan
 cumplir con eficiencia su misión encargada.
 
-**CULTURA**
+CULTURA
 
 Introduciremos un enfoque intercultural a través de:
 
@@ -781,16 +681,6 @@ consideradas en los alcances del convenio 169 de la OIT.
 • Dotaremos de un mayor presupuesto a las diversas direcciones para
 fomentar el rescate y la promoción de las industrias culturales.
 
-+---------+---------+---------+---------+---------+---------+---------+
-| •       |         | de    | la      | in      |         | edi     |
-| Dinami  |         |         |         | dustria |         | torial. |
-| zaremos |         |         |         |         |         |         |
-+=========+=========+=========+=========+=========+=========+=========+
-| • La    |       |         | las   | c     | será    | de    |
-|         | gestión |         |         | ulturas |         | scentra |
-|         |         |         |         |         |         | lizada. |
-+---------+---------+---------+---------+---------+---------+---------+
-
 • Uno de los desafíos pendientes que como República mantenemos es el
 del reconocimiento de la diversidad cultural en la formulación de las
 políticas públicas, lo que ha significado que peruanos y peruanas de
@@ -807,9 +697,7 @@ como el nuestro se necesita un ministerio que reconozca las diversas
 culturas vigentes y ejecute políticas donde los propios pueblos
 originarios participen en su elaboración y ejecución.
 
-25
-
-**LUCHA CONTRA LA CORRUPCIÓN**
+LUCHA CONTRA LA CORRUPCIÓN
 
 Revisaremos toda la legislación sobre corrupción, la tipificación de
 los delitos vinculados a ella y las sanciones impuestas en el código
@@ -827,11 +715,7 @@ Tendremos que potenciar a la Contraloría General de la República, a la
 Fiscalía de la Nación y a todo el sistema judicial anticorrupción para
 que podamos reducir la corrupción con energía.
 
-+-------------+-------------+-------------+-------------+-------------+
-| **R         | **DE**      | **LA**      | **P         |           |
-| EGULACIÓN** |             |             | UBLICIDAD** | **ESTATAL** |
-+=============+=============+=============+=============+=============+
-+-------------+-------------+-------------+-------------+-------------+
+REGULACIÓN DE LA PUBLICIDAD ESTATAL
 
 La publicidad del Estado, mediante la cual algunos gobiernos han
 realizado presión indebida a los medios de comunicación para lograr
@@ -842,58 +726,40 @@ los medios de provincias y redes virtuales. Creemos que así podremos
 garantizar una mejor cobertura de la publicidad estatal y una correcta
 descentralización del gasto público.
 
-**TRANSPORTES Y COMUNICACIONES**
-
-26
+TRANSPORTES Y COMUNICACIONES
 
 • Fomento de la construcción y mejoramiento de caminos rurales
-
 como la primera prioridad.
 
 • Mejoramiento del transporte público con sistemas integrados y
-
 nuevos corredores viales, que permita ahorrar horas de viaje y
-
 mejorar la calidad de vida de nuestra población.
 
 • Implementación de un Sistema Integrado de Monitoreo y
-
 Supervisión vehicular, mediante control Preventivo.
 
 • Uso inmediato de la Red Dorsal: Red Nacional del Estado
-
 Peruano REDNACE, en modo INTRANET, orientada a la
-
 integración de todas las entidades del Estado a nivel nacional,
-
 permitiendo una gestión eficiente.
 
 • Inicio de los proyectos denominados: **Tren Inca** quecomprenderá
-
 el trayecto de Cajamarca a Puno. Y el **Tren Grau** de ámbito
-
 longitudinal por toda la costa Tumbes -- Tacna. Ambos serán
-
 gestionados desde la vocación de integración de mercados
-
 locales y turismo con financiamiento internacional.
 
-**Comercio Exterior y Turismo**
+Comercio Exterior y Turismo
 
 Se gestionará un programa de financiamiento de 500 millones de soles
-
 con fines de ejecutar proyectos de impacto mejorar y dar valor al
-capital
-
-turístico, gastronómico y de culturas vivas.
-
-27
+capital turístico, gastronómico y de culturas vivas.
 
 Se mejorará la apertura de mercados de comercio bilateral y de
 integración regional mejorando la exportación e ingreso de divisas.
 Los TLC buscaremos mejorarlos desde los intereses del país.
 
-**PROTECCIÓN Y DESARROLLO DEL MEDIO AMBIENTE**
+PROTECCIÓN Y DESARROLLO DEL MEDIO AMBIENTE
 
 Nuestro país tiene grandes retos en materia ambiental. En este campo
 tenemos que crear instrumentos estratégicos para la gestión moderna de
@@ -919,9 +785,6 @@ Nuestro país dispone de 13 % del total del territorio de la Amazonía.
 En el año 2000 disponíamos de 78 millones de hectáreas de cobertura de
 bosques, pero hemos deforestado varios cientos de miles de hectáreas
 desde entonces. Tenemos que revertir esta tendencia. La Amazonía es
-
-28
-
 la principal herencia que dejaremos a las próximas generaciones y
 cumpliremos nuestras responsabilidades con esta parte del mundo. Es mi
 compromiso.
@@ -934,7 +797,7 @@ ambiental se efectivicen.
 ambientales, las cuales deben utilizarse para fortalecer la política
 ambiental.
 
-**LA PROTECCIÓN SOCIAL**
+LA PROTECCIÓN SOCIAL
 
 Los sistemas públicos y privados de pensiones, así como la atención de
 la salud de la población en Essalud y el MINSA, al que nos hemos
@@ -947,14 +810,12 @@ Pensiones serán universales y con una cobertura digna. Sobre esa base
 propondremos la creación de una Comisión Ejecutivo-Legislativo para la
 creación de un Nuevo Sistema de Protección Social.
 
-Con este objetivo impulsaremos **la consolidación de un solo sistema
+Con este objetivo impulsaremos la consolidación de un solo sistema
 de prevención en salud unificando Essalud, el Sistema Nacional de
 Salud del Ministerio de Salud, las Direcciones Regionales de Salud y
-los sistemas de salud de las Fuerzas Armadas y la Policía**
+los sistemas de salud de las Fuerzas Armadas y la Policía
 
-29
-
-**Nacional.** Todos en un solo gran sistema que preste el servicio a
+Nacional. Todos en un solo gran sistema que preste el servicio a
 todas los habitantes del país.
 
 En este marco del sistema de protección social, se aprobará la
@@ -964,7 +825,7 @@ niveles de gobierno. Se fortalecerán los programas sociales y se
 buscará mejorar el sistema de focalización de hogares para atender a
 la población más vulnerable del país.
 
-**La Asamblea Constituyente**
+La Asamblea Constituyente
 
 Todos saben, porque así lo hemos manifestado muchas veces, que una de
 nuestras principales banderas políticas, convertida ahora en una
@@ -982,11 +843,7 @@ El pueblo peruano debe tener la seguridad que no queremos hacer
 cambios por el simple deseo de hacerlos, sino que muchas de las
 disposiciones hoy vigentes solo benefician a las grandes corporaciones
 para que puedan llevarse nuestra riqueza a raudales. El estado debe
-tener libertad para promocionar, para vigilar y regular de acuerdo al
-
-30
-
-interés de las mayorías. Ejecutaremos **Y RESPETAREMOS** con energía
+tener libertad para promocionar, para vigilar y regular de acuerdo al interés de las mayorías. Ejecutaremos Y RESPETAREMOS con energía
 lo que el pueblo decida.
 
 Es cierto que la Constitución de 1993 no contempla la figura de una
@@ -1017,9 +874,6 @@ Quienes hacen esta objeción deberían recordar que el Poder Ejecutivo
 debe concentrase en gobernar, y el Congreso en legislar y ejercer el
 control político al gobierno; tareas que deben estar referidas a
 atender
-
-31
-
 los asuntos urgentes de cada día. Por eso la labor constituyente no
 puede ni debe estar a cargo de estos órganos. En cambio, la Asamblea
 Constituyente será elegida por el pueblo exclusivamente para dedicarse
@@ -1036,7 +890,7 @@ candidaturas independientes provenientes de los gremios de
 organizaciones populares y de la sociedad civil. Genuinamente
 representativa de todo el Pueblo Peruano.
 
-**Convoco a todos los peruanos**
+Convoco a todos los peruanos
 
 Queridos compatriotas, debo decirles que yo no gobernaré desde la Casa
 de Pizarro, porque creo que tenemos que romper con los símbolos
@@ -1051,23 +905,19 @@ de lado las diferencias ideológicas, las posiciones políticas e
 intereses personales, para poder arrancar a nuestra patria de las
 graves crisis que la agobian.
 
-32
-
 Convoco a todos los hombres y las mujeres del Perú sin distingos de
 ninguna naturaleza, para decirles que ahora es el tiempo de la
 reconstrucción de la unidad nacional. Esta es una tarea que nos
 compromete a todos; lo haremos en democracia buscando la concertación
 nacional, asegurando una vez más que el 28 de julio del 2026 regresaré
 a mis labores docentes de siempre. Como decían nuestros antepasados
-quechuas antes de emprender una gran tarea: **¡Huk umalla huk
-sunquilla y huk maquilla!,** ¡Una sola fuerza, un solo corazón y una
+quechuas antes de emprender una gran tarea: ¡Huk umalla huk
+sunquilla y huk maquilla!, ¡Una sola fuerza, un solo corazón y una
 misma dirección! Que es la dirección del progreso y la justicia social
 para todos los peruanos.
 
 Muchas gracias pueblo peruano.
 
-**¡VIVA NUESTRA PATRIA!**
+¡VIVA NUESTRA PATRIA!
 
-**¡VIVA EL PERÚ!**
-
-33
+¡VIVA EL PERÚ!
