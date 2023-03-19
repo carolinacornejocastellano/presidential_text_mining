@@ -1,298 +1,88 @@
-Al iniciar este Mensaje que, de acuerdo al artículo 211 de la
-Constitución, entrego al Congreso de la República, quiero dar gracias
-a Dios porque a pesar de todas las dificultades en que vivimos no han
-sucumbido entre nosotros ni la razón ni la fe. Ambas se han reafirmado
-en la conciencia del pueblo peruano a la hora de decidir su destino.
+Al iniciar este Mensaje que, de acuerdo al artículo 211 de la Constitución, entrego al Congreso de la República, quiero dar gracias a Dios porque a pesar de todas las dificultades en que vivimos no han sucumbido entre nosotros ni la razón ni la fe. Ambas se han reafirmado en la conciencia del pueblo peruano a la hora de decidir su destino.
 
-Este histórico hecho, señores Representantes del pueblo, quiero
-compartirlo con los ilustres jefes del Estado y altos dignatarios
-representantes de naciones hermanas, que han venido a acompañarnos en
-este magno acto de democracia, como testigos históricos de la enorme
-fe y decisión de un pueblo por vivir los mismos principios de
-libertad, paz y justicia, enarbolados por nuestros precursores de la
-independencia latinoamericana.
+Este histórico hecho, señores Representantes del pueblo, quiero compartirlo con los ilustres jefes del Estado y altos dignatarios representantes de naciones hermanas, que han venido a acompañarnos en este magno acto de democracia, como testigos históricos de la enorme fe y decisión de un pueblo por vivir los mismos principios de libertad, paz y justicia, enarbolados por nuestros precursores de la independencia latinoamericana.
 
-Recibo este encargo para desempeñarme en la más alta magistratura del
-Estado con la humildad de un peruano más, con el sentimiento de ser
-"un Presidente como tú". Es para mi un alto honor haber sido elegido
-con la más alta votación histórica. Por ello, al ser ungido hoy,
-siento el inmenso compromiso con mi pueblo de obedecer firmemente a
-ese mandato.
+Recibo este encargo para desempeñarme en la más alta magistratura del Estado con la humildad de un peruano más, con el sentimiento de ser "un Presidente como tú". Es para mi un alto honor haber sido elegido con la más alta votación histórica. Por ello, al ser ungido hoy, siento el inmenso compromiso con mi pueblo de obedecer firmemente a ese mandato.
 
-Este es un mandato que me ha dado el pueblo del Perú. Que me ha dado
-el voto masivo de los habitantes de nuestros pueblos jóvenes, los
-campesinos de nuestra costa, sierra y selva, los empresarios populares
-que con sentido nacionalista han apostado por el Perú, así como un
-sector importante de profesionales progresistas amantes de la patria,
-comprometidos con su destino antes que con cualquier interés
-subalterno o afán protagónico.
+Este es un mandato que me ha dado el pueblo del Perú. Que me ha dado el voto masivo de los habitantes de nuestros pueblos jóvenes, los campesinos de nuestra costa, sierra y selva, los empresarios populares que con sentido nacionalista han apostado por el Perú, así como un sector importante de profesionales progresistas amantes de la patria, comprometidos con su destino antes que con cualquier interés subalterno o afán protagónico.
 
-El electorado peruano consagró un mandato de unidad nacional y de
-rechazo a las propuestas alternativas fundadas en la confrontación,
-polarización y conflicto abierto como estilos políticos de gobierno.
-El pueblo nos eligió para que instauremos un nuevo lenguaje de
-entendimiento nacional, que es el lenguaje del diálogo, la
-concertación y la búsqueda de consensos.
+El electorado peruano consagró un mandato de unidad nacional y de rechazo a las propuestas alternativas fundadas en la confrontación, polarización y conflicto abierto como estilos políticos de gobierno. El pueblo nos eligió para que instauremos un nuevo lenguaje de entendimiento nacional, que es el lenguaje del diálogo, la concertación y la búsqueda de consensos.
 
-Ese voto mayoritario expresó el anhelo vehemente de un pueblo por
-restaurar en el país la honestidad en el manejo de la cosa pública. Es
-ése un mandato para restituir la unión indisoluble entre la ética y la
-política. Atendiendo a ese mandato proclamo que desde hoy la palabra
-moralización dejará de ser un vocablo de rutina de los discursos de 28
-de julio, para convertirse en la gran palanca que dará inicio al
-verdadero cambio que cada peruano alberga en su corazón.
+Ese voto mayoritario expresó el anhelo vehemente de un pueblo por restaurar en el país la honestidad en el manejo de la cosa pública. Es ése un mandato para restituir la unión indisoluble entre la ética y la política. Atendiendo a ese mandato proclamo que desde hoy la palabra moralización dejará de ser un vocablo de rutina de los discursos de 28 de julio, para convertirse en la gran palanca que dará inicio al verdadero cambio que cada peruano alberga en su corazón.
 
-Sabemos que transitamos por un camino ya recorrido de promesas y
-expectativas y eso nos obliga a un compromiso verdaderamente
-patriótico.
+Sabemos que transitamos por un camino ya recorrido de promesas y expectativas y eso nos obliga a un compromiso verdaderamente patriótico.
 
-Nosotros insurgimos precisamente como expresión del hartazgo del
-pueblo por el ideologismo ciego que ha hecho del debate político un
-diálogo estéril y un
+Nosotros insurgimos precisamente como expresión del hartazgo del pueblo por el ideologismo ciego que ha hecho del debate político un diálogo estéril y un medio para la búsqueda del encumbramiento personal, antes que solución concreta a los problemas concretos del pueblo. Hemos llegado a la política convocados por millones de corazones peruanos cansados de escuchar, cansados de gritar, "cansados de estar cansados".
 
-1
+Nuestro lema de "Honradez, tecnología y trabajo" identificó desde un primer momento nuestra propuesta de renovación moral en la conducción política de nuestra patria.
 
-medio para la búsqueda del encumbramiento personal, antes que solución
-concreta a los problemas concretos del pueblo. Hemos llegado a la
-política convocados por millones de corazones peruanos cansados de
-escuchar, cansados de gritar, "cansados de estar cansados".
+La honradez como norma de vida fue divisa de la antigua civilización peruana. Hoy vemos como la corrupción campea en el Estado y como desde allí se extiende al conjunto de la sociedad, vemos como pierden credibilidad instituciones que deben ser la garantía que tienen los ciudadanos para el leal cumplimiento de la Ley.
 
-Nuestro lema de "Honradez, tecnología y trabajo" identificó desde un
-primer momento nuestra propuesta de renovación moral en la conducción
-política de nuestra patria.
+Acusaciones muy graves y que comprometen a figuras públicas en casos de contratos lesivos al interés nacional, enriquecimiento ilícito, complicidad en millonarias defraudaciones a inocentes ahorristas se vuelven frecuentes y comunes. El narcotráfico logró penetrar también la esfera del Estado y ante el escándalo del país, hombres que fueron elegidos por sus méritos ciudadanos fugan como vulgares delincuentes.
 
-La honradez como norma de vida fue divisa de la antigua civilización
-peruana. Hoy vemos como la corrupción campea en el Estado y como desde
-allí se extiende al conjunto de la sociedad, vemos como pierden
-credibilidad instituciones que deben ser la garantía que tienen los
-ciudadanos para el leal cumplimiento de la Ley.
+Nos preocupa muy seriamente la dimensión moral de la crisis. Nuestro Gobierno será implacable en la lucha contra la corrupción. El Estado dejará de ser el lugar en que se amasen grandes fortunas al amparo del poder. Nuestro pueblo empobrecido no puede seguir siendo el mudo testigo del enriquecimiento ilícito de quienes convirtieron al Estado en botín personal o de grupos. En algún momento había que poner fin a lo que hasta ahora ha parecido ser un vicio inextirpable en la vida del país.
 
-Acusaciones muy graves y que comprometen a figuras públicas en casos
-de contratos lesivos al interés nacional, enriquecimiento ilícito,
-complicidad en millonarias defraudaciones a inocentes ahorristas se
-vuelven frecuentes y comunes. El narcotráfico logró penetrar también
-la esfera del Estado y ante el escándalo del país, hombres que fueron
-elegidos por sus méritos ciudadanos fugan como vulgares delincuentes.
+Sabemos que habrá resistencia tenaz por parte de quienes son beneficiarios de la corrupción, pero eso no nos va a desalentar ni detener en nuestro esfuerzo.
 
-Nos preocupa muy seriamente la dimensión moral de la crisis. Nuestro
-Gobierno será implacable en la lucha contra la corrupción. El Estado
-dejará de ser el lugar en que se amasen grandes fortunas al amparo del
-poder. Nuestro pueblo empobrecido no puede seguir siendo el mudo
-testigo del enriquecimiento ilícito de quienes convirtieron al Estado
-en botín personal o de grupos. En algún momento había que poner fin a
-lo que hasta ahora ha parecido ser un vicio inextirpable en la vida
-del país.
+Por el contrario esa resistencia nos impulsará a redoblar nuestro esfuerzo.
 
-Sabemos que habrá resistencia tenaz por parte de quienes son
-beneficiarios de la corrupción, pero eso no nos va a desalentar ni
-detener en nuestro esfuerzo.
+Para que ésta no sea una simple promesa de inicio de gobierno, una de tantas que se ofrecen, generosamente cada cinco años, comprometemos desde este momento a todas las instituciones para que se unan a nuestra cruzada de renovación moral. Invitamos a todas las fuerzas políticas a ejercer con nosotros, y sobre nosotros incluso, efectivamente y sin demagogia, la fiscalización que crean conveniente.
 
-Por el contrario esa resistencia nos impulsará a redoblar nuestro
-esfuerzo.
+Somos conscientes del grado de corrupción al que se ha llegado dentro de la administración del Estado. Muchas son las causas que han originado tal estado de cosas, peor debe destacarse la carencia de instituciones adecuadas y sobre todo, la inexistencia de canales que permitan que las denuncias de los ciudadanos se escuchen. Es por ello que, para combatir la corrupción, es necesario crear una entidad independiente.
 
-Para que ésta no sea una simple promesa de inicio de gobierno, una de
-tantas que se ofrecen, generosamente cada cinco años, comprometemos
-desde este momento a todas las instituciones para que se unan a
-nuestra cruzada de renovación moral. Invitamos a todas las fuerzas
-políticas a ejercer con nosotros, y sobre nosotros incluso,
-efectivamente y sin demagogia, la fiscalización que crean conveniente.
+En tal estado de cosas tenemos que facilitar a la ciudadanía la solución de sus protestas o denuncias. Darles la vía administrativa que recabe y reúna la información probatoria necesaria a ser presentada al Poder Judicial. Crearemos el Comité Contra la Corrupción, a cargo de un ciudadano de reconocida solvencia moral, con acceso directo al Presidente de la República y sólo responsable ante él.
 
-Somos conscientes del grado de corrupción al que se ha llegado dentro
-de la administración del Estado. Muchas son las causas que han
-originado tal estado de cosas, peor debe destacarse la carencia de
-instituciones adecuadas y sobre todo, la inexistencia de canales que
-permitan que las denuncias de los ciudadanos se escuchen. Es por ello
-que, para combatir la corrupción, es necesario crear una entidad
-independiente.
+El Gobierno se compromete, tanto a nivel de administración central como de las empresas públicas, a presentar las denuncias que sean del caso, se establezca la responsabilidad política y se formule las acciones legales correspondientes que procedan.
 
-En tal estado de cosas tenemos que facilitar a la ciudadanía la
-solución de sus protestas o denuncias. Darles la vía administrativa
-que recabe y reúna la
+Por ello es también nuestra voluntad respetar escrupulosamente la libertad de información que consagra la Constitución, y sin la cual no es posible la fiscalización democrática de la conducta gubernamental.
 
-2
+Creemos que un gobierno verdadera y objetivamente honrado puede exigir a su pueblo la práctica generalizada de esa virtud que caracterizó a los antiguos peruanos.
 
-información probatoria necesaria a ser presentada al Poder Judicial.
-Crearemos el Comité Contra la Corrupción, a cargo de un ciudadano de
-reconocida solvencia moral, con acceso directo al Presidente de la
-República y sólo responsable ante él.
+En la hora actual, es necesario, además que la ciencia y la tecnología contribuyan decididamente al aumento de la productividad y al mejoramiento de las condiciones de vida de la población. Ello será posible a través de la calificación tecnológica de los recursos humanos, de un proceso de innovación del sector productivo y el uso extendido de tecnologías apropiadas, enlazando la planificación nacional y regional con las demandas del desarrollo integral. En suma propiciaremos una cultura basada en el trabajo.
 
-El Gobierno se compromete, tanto a nivel de administración central
-como de las empresas públicas, a presentar las denuncias que sean del
-caso, se establezca la responsabilidad política y se formule las
-acciones legales correspondientes que procedan.
+Nuestra historia está llena de oportunidades perdidas cuyo signo ha sido la irresponsable dilapidación de recursos materiales abundantes y bien cotizados en los mercados externos.
 
-Por ello es también nuestra voluntad respetar escrupulosamente la
-libertad de información que consagra la Constitución, y sin la cual no
-es posible la fiscalización democrática de la conducta gubernamental.
+Hemos vivido muchas veces en aroma de prosperidad y de la noche a la mañana hemos despertados en la ruina. Hoy ya no podemos pensar que nos sonreirá la fortuna y que la historia del guano, del cobre, del caucho u otras riquezas se repetirán. Sólo podemos confiar en el trabajo creador del hombre peruano. Sólo el trabajo hace posible sociedades prósperas, fuertes, capaces de resistir todas las adversidades.
 
-Creemos que un gobierno verdadera y objetivamente honrado puede exigir
-a su pueblo la práctica generalizada de esa virtud que caracterizó a
-los antiguos peruanos.
+Durante décadas hemos alimentado, asimismo, la ilusión de que la ayuda externa podrá sacarnos del estancamiento, del subdesarrollo. Esa ha sido una idea perniciosa pues ha debilitado nuestras energías nacionales.
 
-En la hora actual, es necesario, además que la ciencia y la tecnología
-contribuyan decididamente al aumento de la productividad y al
-mejoramiento de las condiciones de vida de la población. Ello será
-posible a través de la calificación tecnológica de los recursos
-humanos, de un proceso de innovación del sector productivo y el uso
-extendido de tecnologías apropiadas, enlazando la planificación
-nacional y regional con las demandas del desarrollo integral. En suma
-propiciaremos una cultura basada en el trabajo.
+Muchas veces ha sido invocada la solidaridad internacional sin resultados.
 
-Nuestra historia está llena de oportunidades perdidas cuyo signo ha
-sido la irresponsable dilapidación de recursos materiales abundantes y
-bien cotizados en los mercados externos.
+Esta nueva cultura del trabajo creará las condiciones necesarias para un mejor ordenamiento del mercado, la distribución equitativa de la riqueza y, en fin, una verdadera economía social de mercado que permita romper viejas distorsiones como la concertación económica que no se origina únicamente por el funcionamiento imperfecto del mercado, sino también por la forma en que el Estado interviene en la economía.
 
-Hemos vivido muchas veces en aroma de prosperidad y de la noche a la
-mañana hemos despertados en la ruina. Hoy ya no podemos pensar que nos
-sonreirá la fortuna y que la historia del guano, del cobre, del caucho
-u otras riquezas se repetirán. Sólo podemos confiar en el trabajo
-creador del hombre peruano. Sólo el trabajo hace posible sociedades
-prósperas, fuertes, capaces de resistir todas las adversidades.
+El tema de los monopolios está íntimamente vinculado con el problema del acceso al mercado y a los servicios públicos, es decir, con barreras tanto privadas como públicas que dificultan este acceso. Más aún, en una economía como la peruana, en la que sólo un sector privilegiado ha tenido siempre las puertas abiertas para producir y obtener los favores del Estado marginando y dejando sin protección a la gran mayoría.
 
-Durante décadas hemos alimentado, asimismo, la ilusión de que la ayuda
-externa podrá sacarnos del estancamiento, del subdesarrollo. Esa ha
-sido una idea perniciosa pues ha debilitado nuestras energías
-nacionales.
+Es justamente hacia la eliminación de estas barreras y a la creación de un marco de protección que debería estar encaminada una legislación antimonopólica que busque realmente contribuir al desarrollo económico, y no se constituya en un simple mecanismo de control de precios o prohibición de acaparamiento.
 
-Muchas veces ha sido invocada la solidaridad internacional sin
-resultados.
+Mi gobierno propondrá un proyecto de ley antimonopolio, de manera que este importante propósito se vea materializado, dada su complejidad, tan pronto como sea posible.
 
-Esta nueva cultura del trabajo creará las condiciones necesarias para
-un mejor ordenamiento del mercado, la distribución equitativa de la
-riqueza y, en fin, una verdadera economía social de mercado que
-permita romper viejas distorsiones como la concertación económica que
-no se origina únicamente por el funcionamiento imperfecto del mercado,
-sino también por la forma en que el Estado interviene en la economía.
+Dentro del espíritu de participación plena que nos inspira deseamos canalizar la inquietud popular en las decisiones de gobierno, y por ello en el curso del mes de agosto y en coordinación con el Instituto libertad y Democracia publicaremos en forma de proyecto, la ley de la participación popular para la canalización de la opinión pública para la formación de políticas y normas del Gobierno Central. La opinión nacional sobre este proyecto nos dará luces para su ejecución posterior.
 
-3
+Mi gobierno se propone asimismo lograr la simplificación, la armonización de los regímenes aduaneros y el manejo eficiente de los mecanismos de fomento a las exportaciones, de manera que el trámite de las operaciones aduaneras sea sumamente breve.
 
-El tema de los monopolios está íntimamente vinculado con el problema
-del acceso al mercado y a los servicios públicos, es decir, con
-barreras tanto privadas como públicas que dificultan este acceso. Más
-aún, en una economía como la peruana, en la que sólo un sector
-privilegiado ha tenido siempre las puertas abiertas para producir y
-obtener los favores del Estado marginando y dejando sin protección a
-la gran mayoría.
+Debemos ser protagonistas de nuestro propio destino y al mismo tiempo hacer realidad de insertar al Perú en la comunidad financiera internacional. En este sentido nuestro gobierno está decidido a restablecer las relaciones internacionales del Perú en el campo financiero, bancario y comercial, a restablecer antiguos nexos y resolver la diferencias. Bajo nuestro gobierno estas relaciones van a llevarse a cabo en un ambiente dentro del cual los inversionistas locales y extranjeros tendrán oportunidades equitativas de acuerdo con principios legales internacionales y dentro de un ambiente que fomente la inversión extranjera en el Perú.
 
-Es justamente hacia la eliminación de estas barreras y a la creación
-de un marco de protección que debería estar encaminada una legislación
-antimonopólica que busque realmente contribuir al desarrollo
-económico, y no se constituya en un simple mecanismo de control de
-precios o prohibición de acaparamiento.
+Nos toca afrontar la crisis más profunda que ha vivido el país en toda su historia republicana: una economía entrampada en una hiperinflación y una depresión, una sociedad escindida por la violencia, la corrupción, terrorismo y el narcotráfico. En una palabra, casi una economía de guerra.
 
-Mi gobierno propondrá un proyecto de ley antimonopolio, de manera que
-este importante propósito se vea materializado, dada su complejidad,
-tan pronto como sea posible.
+En los últimos dos años la caída de la producción ha sido estrepitosa. El nivel de producción que nos deja el gobierno saliente a junio de este año es tres por ciento más bajo del recibido al inicio de su gestión. Esto quiere decir que si es cierto que hace cinco años el gobierno anterior recibió una economía deprimida, hoy nosotros heredamos una economía caótica y exhausta.
 
-Dentro del espíritu de participación plena que nos inspira deseamos
-canalizar la inquietud popular en las decisiones de gobierno, y por
-ello en el curso del mes de agosto y en coordinación con el Instituto
-libertad y Democracia publicaremos en forma de proyecto, la ley de la
-participación popular para la canalización de la opinión pública para
-la formación de políticas y normas del Gobierno Central. La opinión
-nacional sobre este proyecto nos dará luces para su ejecución
-posterior,
+Basta citar algunos ejemplos en las principales empresas públicas, como PETROPERÚ, ELECTROPERÚ, ENTELPERÚ, y SEDAPAL, todas al borde del colapso, consecuencia del mal manejo económico y administrativo, que obligará a tomar medidas de emergencia que permitan continuar prestando los servicios indispensables para toda la población. Esta dramática situación sin embargo, no debe conducirnos a la idea simplista de pretender privatizar todas las empresas públicas. Estas y otras empresas cuyo rango de acción son de alcance nacional o por la magnitud de sus operaciones comerciales, reitero permanecerán siendo públicas. Estas empresas se reestructurarán con el objeto de lograr la eficiencia y rentabilidad.
 
-Mi gobierno se propone asimismo lograr la simplificación, la
-armonización de los regímenes aduaneros y el manejo eficiente de los
-mecanismos de fomento a las exportaciones, de manera que el trámite de
-las operaciones aduaneras sea sumamente breve.
+En el caso de la industria la depresión es alarmante, un gran número de empresas se están descapitalizando aceleradamente y ya han abandonado su giro principal para dedicarse al negocio de coyuntura, que es el único que les permite sobrevivir.
 
-Debemos ser protagonistas de nuestro propio destino y al mismo tiempo
-hacer realidad de insertar al Perú en la comunidad financiera
-internacional. En este sentido nuestro gobierno está decidido a
-restablecer las relaciones internacionales del Perú en el campo
-financiero, bancario y comercial, a restablecer antiguos nexos y
-resolver la diferencias. Bajo nuestro gobierno estas relaciones van a
-llevarse a cabo en un ambiente dentro del cual los inversionistas
-locales y extranjeros tendrán oportunidades equitativas de acuerdo con
-principios legales internacionales y dentro de un ambiente que fomente
-la inversión extranjera en el Perú.
+El sector agropecuario está postrado, nuestra minería se halla inmersa en una severa crisis reflejada en una producción que es de 22% más baja que la de 1,985.
 
-Nos toca afrontar la crisis más profunda que ha vivido el país en toda
-su historia republicana: una economía entrampada en una hiperinflación
-y una depresión, una sociedad escindida por la violencia, la
-corrupción, terrorismo y el narcotráfico. En una palabra, casi una
-economía de guerra.
+La epidemia inflacionaria ha corroído todos los cimientos de nuestro sistema productivo durante el quinquenio del gobierno que termina, sembrando un clima altamente especulativo en el que los más beneficiados son los grandes poderes económicos y los que más pierden son nuestras grandes masas desposeídas.
 
-En los últimos dos años la caída de la producción ha sido estrepitosa.
-El nivel de producción que nos deja el gobierno saliente a junio de
-este año es tres por ciento más bajo del recibido al inicio de su
-gestión. Esto quiere decir que si es cierto que hace cinco años el
-gobierno anterior recibió una economía deprimida, hoy nosotros
-heredamos una economía caótica y exhausta.
+Esta epidemia nefasta se ve reflejada en la espeluznante tasa de más de 2'200,000 por ciento de la inflación acumulada en el quinquenio gubernativo referido. Esta inflación, es por sí gigantesca, es de hecho mucho más elevada si se considera que hoy existe una inflación reprimida o embalsada del orden del 1,200 por ciento, debido a los inmensos déficits que el gobierno saliente ha venido acumulando tanto a nivel de Gobierno Central como de las empresas públicas. Al ser incorporada esta inflación reprimida en el cálculo anual, el nivel de la inflación potencial se sitúa dentro del rango de las hiperinflaciones históricas del mundo.
 
-4
+Heredamos pues un desastre. Remontar la crisis primero y sentar luego las bases de desarrollo integral de nuestro país, son nuestros objetivos centrales. Esta es una tarea gigantesca de la cual debemos tomar entera conciencia o perderemos el rumbo de la historia. Nadie debe sustraerse a ella.
 
-Basta citar algunos ejemplos en las principales empresas públicas,
-como PETROPERÚ, ELECTROPERÚ, ENTELPERÚ, y SEDAPAL, todas al borde del
-colapso, consecuencia del mal manejo económico y administrativo, que
-obligará a tomar medidas de emergencia que permitan continuar
-prestando los servicios indispensables para toda la población. Esta
-dramática situación sin embargo, no debe conducirnos a la idea
-simplista de pretender privatizar todas las empresas públicas. Estas y
-otras empresas cuyo rango de acción son de alcance nacional o por la
-magnitud de sus operaciones comerciales, reitero permanecerán siendo
-públicas. Estas empresas se reestructurarán con el objeto de lograr la
-eficiencia y rentabilidad.
+El Perú necesita del esfuerzo de todos: Del empresario, del empleado público, del obrero, del campesino, del vendedor ambulante. En este esquema rechazamos como antinacionales la especulación financiera, la fuga de capitales, pero asimismo el burocratismo parásito y el sabotaje a la producción alentado con fines exclusivamente políticos.
 
-En el caso de la industria la depresión es alarmante, un gran número
-de empresas se están descapitalizando aceleradamente y ya han
-abandonado su giro principal para dedicarse al negocio de coyuntura,
-que es el único que les permite sobrevivir.
+Necesitamos ordenar, estabilizar nuestro frente interno, pero no podemos contradecir la realidad mundialmente aceptada ni personificar modelos políticos cuyo costo social y nacional se ha traducido en desastre. Como he dicho, el Perú debe reinsertarse en la comunidad financiera internacional y en ello no va ni sumisión ni recorte de soberanía sino todo lo contrario. Un país en grave crisis económica, aislado e impotente en la práctica para hacer prevalecer un punto de vista, mal puede ser soberano e independiente. Son soberanos e independientes, los países que tiene economía sólida y, por ello, alternativas.
 
-El sector agropecuario está postrado, nuestra minería se halla inmersa
-en una severa crisis reflejada en una producción que es de 22% más
-baja que la de 1,985.
-
-La epidemia inflacionaria ha corroído todos los cimientos de nuestro
-sistema productivo durante el quinquenio del gobierno que termina,
-sembrando un clima altamente especulativo en el que los más
-beneficiados son los grandes poderes económicos y los que más pierden
-son nuestras grandes masas desposeídas.
-
-Esta epidemia nefasta se ve reflejada en la espeluznante tasa de más
-de 2'200,000 por ciento de la inflación acumulada en el quinquenio
-gubernativo referido. Esta inflación, es por sí gigantesca, es de
-hecho mucho más elevada si se considera que hoy existe una inflación
-reprimida o embalsada del orden del 1,200 por ciento, debido a los
-inmensos déficits que el gobierno saliente ha venido acumulando tanto
-a nivel de Gobierno Central como de las empresas públicas. Al ser
-incorporada esta inflación reprimida en el cálculo anual, el nivel de
-la inflación potencial se sitúa dentro del rango de las
-hiperinflaciones históricas del mundo.
-
-Heredamos pues un desastre. Remontar la crisis primero y sentar luego
-las bases de desarrollo integral de nuestro país, son nuestros
-objetivos centrales. Esta es una tarea gigantesca de la cual debemos
-tomar entera conciencia o perderemos el rumbo de la historia. Nadie
-debe sustraerse a ella.
-
-El Perú necesita del esfuerzo de todos: Del empresario, del empleado
-público, del obrero, del campesino, del vendedor ambulante. En este
-esquema rechazamos como antinacionales la especulación financiera, la
-fuga de capitales, pero asimismo el burocratismo parásito y el
-sabotaje a la producción alentado con fines exclusivamente políticos.
-
-Necesitamos ordenar, estabilizar nuestro frente interno, pero no
-podemos contradecir la realidad mundialmente aceptada ni personificar
-modelos políticos cuyo costo social y nacional se ha traducido en
-desastre. Como he dicho el
-
-5
-
-Perú debe reinsertarse en la comunidad financiera internacional y en
-ello no va ni sumisión ni recorte de soberanía sino todo lo contrario.
-Un país en grave crisis económica, aislado e impotente en la práctica
-para hacer prevalecer un punto de vista, mal puede ser soberano e
-independiente. Son soberanos e independientes, los países que tiene
-economía sólida y, por ello, alternativas.
-
-Nuestro programa de estabilización económica propicia políticas que
-ataquen rigurosa e inflexiblemente las causas de la inflación. Vamos a
-destruir las raíces de este problema como lo prometiéramos,
-pragmáticamente, sin esclavizar nuestra acción de gobierno a recetas
-mágicas sacadas de los textos.
+Nuestro programa de estabilización económica propicia políticas que ataquen rigurosa e inflexiblemente las causas de la inflación. Vamos a destruir las raíces de este problema como lo prometiéramos, pragmáticamente, sin esclavizar nuestra acción de gobierno a recetas mágicas sacadas de los textos.
 
 Nuestro programa de estabilización se propone reducir las brechas que
 traban nuestro desarrollo social: la brecha fiscal, la brecha externa,
@@ -581,27 +371,12 @@ la defienden.
 
 Pueblo del Perú:
 
-El 10 de junio tu voto fue por la esperanza. Este país que perdía el
-rumbo, esta sociedad, cansada de la demencia de la demagogia y la
-inoperancia gubernativas, acudió al llamado de un mensaje de
-renovación. Apostó nuevamente por democracia y nos toca a los hombres
-hoy en el gobierno ser fieles a su mandato.
+El 10 de junio tu voto fue por la esperanza. Este país que perdía el rumbo, esta sociedad, cansada de la demencia de la demagogia y la inoperancia gubernativas, acudió al llamado de un mensaje de renovación. Apostó nuevamente por democracia y nos toca a los hombres hoy en el gobierno ser fieles a su mandato.
 
-Hoy más que nunca es necesario el patriotismo de quienes estamos al
-frente del gobierno. El Perú es nuestra partida y nuestra meta, su
-engrandecimiento debe ser nuestro sueño, su ruina nuestra pesadilla y
-azote.
+Hoy más que nunca es necesario el patriotismo de quienes estamos al frente del gobierno. El Perú es nuestra partida y nuestra meta, su engrandecimiento debe ser nuestro sueño, su ruina nuestra pesadilla y azote.
 
-Por el Dios que cree la mayoría de mujeres y hombres de este país yo
-juro trabajar por sacarlo del estado en que se encuentra y conducirlo
-por destinos superiores. Pero no quiero la soledad del gobernante que
-puede sentirse Mesías, quiero la compañía poderosa de mi pueblo, su
-cercanía, pues sólo ella me recordará que soy un peruano más que
-tiene, como único privilegio su responsabilidad de gobernante.
+Por el Dios que cree la mayoría de mujeres y hombres de este país yo juro trabajar por sacarlo del estado en que se encuentra y conducirlo por destinos superiores. Pero no quiero la soledad del gobernante que puede sentirse Mesías, quiero la compañía poderosa de mi pueblo, su cercanía, pues sólo ella me recordará que soy un peruano más que tiene, como único privilegio su responsabilidad de gobernante.
 
-Dios ilumine al pueblo del Perú y me ilumine para emprender esta tarea
-gigantesca, pero hermosa, que hoy se inicia.
+Dios ilumine al pueblo del Perú y me ilumine para emprender esta tarea gigantesca, pero hermosa, que hoy se inicia.
 
 Muchas gracias.
-
-11
