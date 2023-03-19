@@ -67,13 +67,15 @@ df <- tibble(
 )
 ```
 
-
 ```{r}
 # Read speeches
 df$speech <- df$url %>% 
     map_chr(~ read_lines(.x, 
       locale = locale(encoding = "UTF-8")) %>% 
-    paste(collapse = "\n"))
+        paste(collapse = "\n"))
+
+# delete URLs from df
+df$url <- NULL
 ```
 
 ## Data preparation
@@ -89,7 +91,6 @@ stopwords_es <- stopwords::stopwords("es",
 df <- df %>% 
   unnest_tokens(word, speech) %>% 
   filter(!word %in% stopwords_es)
-
 ```
 
 ```{r general word ranking}
@@ -100,23 +101,32 @@ df %>%
 ```
 
 ```{r}
-frequency <- 
-  #regex to identify words and not _words_
-  mutate(word = str_extract(word, "[a-z']+")) %>%
-  #we count number of mentions of a word for an author
-  count(author, word) %>%
-  #we calculate proportion
-  group_by(author) %>%
-  mutate(proportion = n / sum(n)) %>% 
-  select(-n) %>% 
-  #we reshape the dataframe
-  #pivot wider means: more columns, less rows
-  pivot_wider(names_from = author, values_from = proportion) %>%
-  #pivot longer means: more rows, less columns
-  pivot_longer(`Brontë Sisters`:`H.G. Wells`,
-               names_to = "author", values_to = "proportion")
+# Show the most common words in the speeches of each president
+df %>% 
+  count(president, 
+    word, 
+    sort = TRUE
+  ) %>% 
+  filter(n > 5) %>% 
+  ggplot(aes(x = reorder(word, n), 
+            y = n, 
+            fill = president)) +
+  geom_col() +
+    facet_wrap(~president, scales = "free") +
+    coord_flip() +
+    theme_minimal() +
+    labs(
+      x = "Word",
+      y = "Frequency", 
+      title = "Most Common Words in Presidential Inauguration Speeches", 
+      subtitle = "Last Decade", 
+      fill = "President"
+    )
+```
 
-frequency
+```{r}
+
+
 ```
 
 
