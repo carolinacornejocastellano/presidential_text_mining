@@ -87,23 +87,30 @@ stopwords_es <- stopwords::stopwords("es",
 )
 ```
 
+```{r delete stopwords from the original df}
+df_no_stopwords <- df %>%
+  unnest_tokens(word, speech) %>%
+  anti_join(data.frame(word = stopwords_es),
+            by = "word") %>%
+  group_by(president, date) %>%
+  summarize(clean_speech = paste(word,
+                                 collapse = " "))
+```
 ```{r}
-df <- df %>% 
+df_tokenized <- df %>% 
   unnest_tokens(word, speech) %>% 
   filter(!word %in% stopwords_es)
 ```
 
 ```{r general word ranking}
-df %>%
+df_tokenized %>%
   count(word,
     sort = TRUE
   )
 ```
 
-
-
 ```{r plot the most common words in presidential speeches}
-df %>% 
+df_tokenized %>% 
   count(president, 
     word, 
     sort = TRUE
@@ -139,55 +146,45 @@ df %>%
 ```
 
 ## N-grams
+
+
 We will analyze the most common bigrams:
 
-```{r bigrams}
-bigrams <- df %>%
+```{r most common bigrams in all speeches}
+df_no_stopwords %>%
   unnest_tokens(bigram,
-    word,
-    token = "ngrams",
-     n = 2
-  )
+                clean_speech,
+                token = "ngrams",
+                n = 2) %>%
+  filter(!is.na(bigram)) %>%
+  count(bigram, sort = TRUE) %>% 
+  head(20)
 ```
 
 ```{r}
-bigram_sep <- bigrams %>%
-  separate(bigram, c("word1", "word2"), sep = " ")
+bigrams <-  df_no_stopwords %>%
+  unnest_tokens(bigram, 
+                clean_speech, 
+                token = "ngrams", 
+                n = 2)
 
-bigram_counts <- bigram_sep %>%
-  count(president,
-    word1, 
-    word2,
-    sort = TRUE
-  )
+# Bigrams by president
+bigram_counts <- bigrams %>%
+  count(president, 
+        bigram, 
+        sort = TRUE)
+
+# Top bigrams for each president
+top_bigrams <- bigram_counts %>%
+  group_by(president) %>%
+  top_n(2, n) %>%
+  arrange(president)
+
+top_bigrams
 ```
-
-```{r Plot the most common bigrams}
-bigram_counts %>%
-  filter(n > 5) %>%
-  ggplot(aes(x = reorder(word1, n), 
-            y = n, 
-            fill = president)) +
-  geom_col() +
-    facet_wrap(~president, scales = "free") +
-    coord_flip() +
-    theme_minimal() +
-    labs(
-      x = "Bigram",
-      y = "Frequency", 
-      title = "Most Common Bigrams in Presidential Inauguration Speeches", 
-      subtitle = "Last Decade", 
-      fill = "President"
-    )
-
-```
-
-
 
 
 
 ## Sentiment analysis
 
 ## Latent Dirichlet Allocation
-
-```{r}
