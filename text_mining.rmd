@@ -100,35 +100,43 @@ df %>%
   )
 ```
 
-```{r}
-# Show the most common words in the speeches of each president
+
+
+```{r plot the most common words in presidential speeches}
 df %>% 
   count(president, 
     word, 
     sort = TRUE
   ) %>% 
-  filter(n > 5) %>% 
+  filter(n > 7) %>% # words that each president used more than 7 times
   ggplot(aes(x = reorder(word, n), 
             y = n, 
             fill = president)) +
   geom_col() +
-    facet_wrap(~president, scales = "free") +
+    facet_wrap(~president, 
+    scales = "free") +
     coord_flip() +
+    scale_fill_manual(values = brewer.pal(8, "BrBG")) +
     theme_minimal() +
+    ggtitle("Most Common Words in Presidential Inauguration Speeches", 
+            subtitle = "From 1990 to 2022") +
     labs(
       x = "Word",
       y = "Frequency", 
-      title = "Most Common Words in Presidential Inauguration Speeches", 
-      subtitle = "Last Decade", 
       fill = "President"
+    ) +
+    theme(
+      plot.title = element_text(
+        hjust = 0.5,
+        size = 20,
+        face = "bold"
+      ),
+      plot.subtitle = element_text(
+        hjust = 0.5,
+        size = 14
+      )
     )
 ```
-
-```{r}
-
-
-```
-
 
 ## N-grams
 We will analyze the most common bigrams:
