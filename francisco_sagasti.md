@@ -87,7 +87,7 @@ Este deseo, este grito de reformas y de cambios para que todos podamos
 tener las mismas oportunidades es lo que estamos viendo en la calle
 ahora.
 
-Pero déjenme decir lo que veo que tenemos ahora. **(18)** A mis
+Pero déjenme decir lo que veo que tenemos ahora. A mis
 colegas en la Mesa Directiva, quisiera plantear, y es que es una Mesa
 Directiva corta con tareas muy concretas y específicas, no vamos a
 estar haciendo lo que sabemos, ya que no podemos hacerlo. Y los que
