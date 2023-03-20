@@ -25,7 +25,8 @@ libraries <- c(
   "quanteda",
   "quanteda.textplots",
   "topicmodels",
-  "syuzhet"
+  "syuzhet",
+  "SentimentAnalysis"
 )
 
 for (lib in libraries) {
@@ -100,6 +101,7 @@ df_no_stopwords <- df %>%
   summarize(clean_speech = paste(word,
                                  collapse = " "))
 ```
+
 ```{r}
 df_tokenized <- df_no_stopwords %>% 
   unnest_tokens(word, clean_speech) %>% 
@@ -274,51 +276,76 @@ Tres de los cuatro NO fueron elegidos democráticamente, sino que asumieron el c
 
 ## Sentiment analysis
 
-We will perform sentiment analysis using the AFINN lexicon:
+```{r }
+sentiments_spanish <- analyzeSentiment(df_tokenized$word,
+  language = "spanish"
+)
+head(sentiments_spanish)
+```
+
+```{r}
+df_sentiments <- data.frame(df_tokenized$word,
+  sentiment = convertToDirection(sentiments_spanish$SentimentGI))
+df_sentiments
+```
+
+```{r}
+table(df_sentiments$sentiment)
+```
+
+```{r}
+df_sentiments %>%
+  group_by(sentiment) %>%
+  summarise(number = n()) %>% 
+  ggplot(aes(x = sentiment,
+            y=number)) +
+  geom_bar(aes(fill=sentiment),
+              stat = "identity") +
+  scale_fill_manual(values = brewer.pal(4, "BrBG")) +
+  theme_minimal() +
+  ggtitle("Most Common Sentiments in Presidential Speeches", 
+          subtitle = "From 1990 to 2022") +
+  labs(x = "Sentiment", 
+       y = "Frequency", 
+       fill = "President") +
+  theme(plot.title = element_text(hjust = 0.5, 
+                                  size = 20, 
+                                  face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, 
+                                     size = 14))
+```
+
+Most common sentiments per president
+
+```{r}
+
+```
+
+```{r}
+df_sentiments %>%
+  group_by(Year, President, sentiment) %>%
+  summarise(number = n()) %>% 
+  ggplot(aes(x = sentiment,
+            y=number)) +
+  geom_bar(aes(fill=President),
+              stat = "identity") +
+  scale_fill_manual(values = brewer.pal(length(unique(df_sentiments$President)), "Set3")) +
+  theme_minimal() +
+  ggtitle("Most Common Sentiments in Presidential Speeches", 
+          subtitle = "From 1990 to 2022") +
+  labs(x = "Sentiment", 
+       y = "Frequency", 
+       fill = "President") +
+  theme(plot.title = element_text(hjust = 0.5, 
+                                  size = 20, 
+                                  face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, 
+                                     size = 14))
+```
+
+## Latent Dirichlet Allocation
 
 ```{#r}
-# Perform sentiment analysis
-sentiment <- df_tokenized %>% 
-  inner_join(get_sentiments("afinn")) %>% 
-  group_by(president) %>% 
-  summarise(sentiment = sum(value))
-
-# Plot sentiment
-sentiment %>% 
-  ggplot(aes(x = reorder(president, sentiment), 
-             y = sentiment, 
-             fill = president)) + 
-  geom_col() + 
-  theme_minimal() + 
-  coord_flip() + 
-  labs(x = "President", 
-       y = "Sentiment", 
-       title = "Sentiment Analysis of Presidential Inauguration Speeches", 
-       subtitle = "Last Decade", 
-       fill = "President")
-```
-
-```{r alternative}
-# Sentiment analysis
-sentiments_spanish <- read.csv("path/to/spanish_sentiment_lexicon.csv",
-  header = TRUE
-)
-
-sentiment_scores <- df_tokenized %>%
-  inner_join(sentiments_spanish, 
-  by = c("word" = "spanish_word")) %>%
-  group_by(president) %>%
-  summarize(sentiment_score = sum(sentiment_value))
-
-# Visualize sentiment scores
-ggplot(sentiment_scores, aes(x = president, y = sentiment_score, fill = president)) +
-  geom_col() +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(x = "President", y = "Sentiment Score", title = "Sentiment Analysis of Presidential Speeches")
-```
-## Latent Dirichlet Allocation
-```{r}
 # Create a Document-Term Matrix (DTM)
 dtm <- df_tokenized %>%
   count(president, word) %>%
