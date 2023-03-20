@@ -40,9 +40,9 @@ Thus, we will work with 10 presidential messages, proclaimed on the following da
 
 Of these, Dina Boluarte, Francisco Sagasti, Martín Vizcarra and Valentín Paniagua were not elected by popular vote, but were assigned for different reasons and in different contexts, with different popular approval. There is also a debate about Alberto Fujimori's second term, whether he was legitimately elected or manipulated the results in obedience to his dictatorial spirit. On the other hand, Manuel Merino was not purposely considered: because of the way he took office and his brief period, many do not consider him a president, only a coup plotter or usurper. 
 
-## Pre-processing 
+## Dataframe creation
 
-```{r load libraries}
+```{r}
 libraries <- c(
   "tidyverse",
   "tidytext",
@@ -63,13 +63,19 @@ libraries <- c(
   "SentimentAnalysis"
 )
 
+# install (in case they are not already installed) and load packages
 for (lib in libraries) {
-  suppressPackageStartupMessages(library(lib,
-    character.only = TRUE
-  ))
+  if (!requireNamespace(lib, quietly = TRUE)) {
+    install.packages(lib)
+  }
+  suppressPackageStartupMessages(library(lib, character.only = TRUE))
 }
+
+# remove vector and iterator
 rm(lib, libraries)
 ```
+
+The speeches were downloaded from the GitHub repository. The following steps are to automatically create the download link for each given the username and repository name:
 
 ```{r download speeches}
 presidents <-
@@ -89,7 +95,8 @@ links <- paste0(
   tolower(gsub(" ", "_", presidents)), ".md")
 ```
 
-```{r}
+Then, the dataframe was created:
+```{r create df}
 df <- tibble(
   president = presidents,
   date = c("2022-12-07", 
@@ -106,19 +113,27 @@ df <- tibble(
 )
 ```
 
-```{r}
-# Read speeches
+And then we download the speeches. In this way, we will obtain a dataframe with 3 columns: president, date of the speech and the entire speech, in a single line for each president:
+
+```{r read speeches}
 df$speech <- df$url %>% 
     map_chr(~ read_lines(.x, 
       locale = locale(encoding = "UTF-8")) %>% 
         paste(collapse = "\n"))
 
-# delete URLs' column from df
+# delete URLs' column from df, as they are not longer needed
 df$url <- NULL
+
+head(df)
 ```
 
 ## Data preparation
-Now we will tokenize the speeches and remove stopwords:
+
+Now we will tokenize the speeches and remove stopwords. Since the language of the speeches is Spanish, we chose to conduct the analysis in Spanish. We considered that translating them could add a degree of bias, since many online translation services perform very literal translations and/or make the real meaning of what was said at the time get lost. 
+
+However, as we will see later on, analyzing the Spanish texts was a challenge in itself, since the stopwords, sentiment analysis, lemmatization and stemming packages, etc., are mostly built for English corpora. In some cases, we had to add additional parameters or use other packages to do the same as what we learned in the classes with English texts. 
+
+Next, to remove the English stopwords, we store them in a vector. Then, we split the column of speechs into tokens with the `unnest_tokens()` function from the `tidytext` package. Subsequently, we removed those tokens that matched the stopwords stored in the vector.
 
 ```{r store stopwords in Spanish as a vector}
 stopwords_es <- stopwords::stopwords("es",
@@ -142,12 +157,18 @@ df_tokenized <- df_no_stopwords %>%
   filter(!word %in% stopwords_es)
 ```
 
+Below we can see which were the most used words in a given speech, and which president used them the most. It can be seen that Pedro Pablo Kuczynski (PPK) leads the ranking, mentioning the common place _país_ (country) 32 times in his speech. Pedro Castillo also used that word repeatedly. This is interesting because both come from totally different political -and personal- spectrums: PPK, of Polish origin and upper income class, has been in Peruvian politics for decades: is an economist, businessman and former Minister of Economy, and a neoliberal who studied all his degrees in US and UK universities. On the other hand, Pedro Castillo, from the conservative left, was a rural school teacher in Cajamarca, one of the poorest regions of Peru, with no experience as a politician. Both mentioned _país_ (country) repeatedly. Regarding a word that can give us an idea of the priorities of a president at the beginning of his government, in the case of Pedro Castillo, the word _salud_ (health) was repeated 28 times. This makes sense, since he took office at a time when the Covid-19 pandemic was still killing thousands of people in Peru.  It is clear that public health policies were an important theme in his first speech.
+
+Another case worth mentioning is the reference to the word _pueblo_ (town, nation or working class) in the inauguration of the second term of dictator Alberto Fujimori. He also mentioned _desarrollo_ (development) a lot and, towards the fourth tab of results, it is seen that he mentioned _derechos_ (rights) and _humanos_ (human) 12 times. It is peculiar because he is now facing sentences, among other reasons, for systematic violations of human rights. For example, his "family planning" policies, which consisted of forced sterilization of women in the poorest and most remote areas of Peru, often Quechua-speaking, were among his most notorious cases. In his fight against terrorism, he also ordered innocent and poor people to be killed massively for being "suspects".
+
 ```{r general word ranking}
 df_tokenized %>%
   count(word,
     sort = TRUE
   )
 ```
+
+Below is a graph representing the most used words by each president. Specifically, those words used more than 7 times are shown. For that reason, some presidents —Valentín Paniagua and Dina Boluarte— are not shown. This is to be expected, because they took office by emergency: it is understandable that they did not have a speech as extensive and prepared as those elected by popular vote. Even Francisco Sagasti and Martin Vizcarra, who are included in the graph, are the two who show the fewest words above 7 repetitions among all the others: they also took office on an emergency basis, with only a few hours' pre-notification.
 
 ```{r plot the most common words in presidential speeches}
 df_tokenized %>% 
@@ -187,8 +208,7 @@ df_tokenized %>%
 
 ## N-grams
 
-
-We will analyze the most common bigrams:
+We will analyze the most common bigrams. Below the top 20 bigrams can be seen:
 
 ```{r most common bigrams in all speeches}
 df_no_stopwords %>%
@@ -200,6 +220,15 @@ df_no_stopwords %>%
   count(bigram, sort = TRUE) %>% 
   head(20)
 ```
+Similar to what has already been mentioned, the reference to human rights (_derechos humanos_) is constant in the discourse of Alberto Fujimori's second term. Without reading his speech, but knowing in broad terms the reasons for which he is accused, one might think that in his speech he was already defending himself against accusations of human rights violations. 
+
+PPK mentioned the bigrams _año 2021_ (year 2021) and _año Bicentenario_ (Bicentennial year) a lot because, upon taking office in 2016, he was going to be the president to receive the Bicentennial of Peru's Independence on 2021. However, he resigned from office much earlier.
+
+On the other hand, the _asamblea constityente_ Constituent Assembly was Pedro Castillo's main campaign promise to reform the constitution. 
+
+Another important feature is the mention of social issues by the two presidents who took office after running for the left: Ollanta Humala —although he later made a neoliberal right-wing government— and Pedro Castillo. The former spoke repeatedly about _inclusión social_ (social inclusion), and the latter about _protección social_ (social protection).
+
+Below are the top 2 bigrams for each president. However, since there are many bigrams that are repeated an equal number of times, there are many ties in the top 2, so more are actually shown.
 
 ```{r}
 bigrams <-  df_no_stopwords %>%
@@ -222,7 +251,7 @@ top_bigrams <- bigram_counts %>%
 
 top_bigrams
 ```
-The following plot does not show well in the inline preview. Please, click in "Show in New window" button for it to be displayed well:
+The following graph shows the most common bigrams. However, the plot does not show well in the inline preview. Please, click in "Show in New window" button for it to be displayed well:
 
 ```{r bigrams plot}
 ggplot(top_bigrams, 
@@ -247,8 +276,6 @@ ggplot(top_bigrams,
                                      size = 14))
 
 ```
-
-
 Now, let's take a look to the most common trigrams:
 
 ```{r}
@@ -261,6 +288,12 @@ df_no_stopwords %>%
   count(trigram, sort = TRUE) %>% 
   head(20)
 ```
+
+In the case of PPK, references to the year 2021 as the year of the Bicentennial of the Independence of Peru are repeated. However, the theme of _país moderno significa_, alluding to "modernization", is also very present. It could be thought that his allusion to modernization was in response to one of the main criticisms against him during his campaign: that he is an "old school" politician who has been decades without making a significant contribution to the country from his positions in the executive and legislative offices, and that he is too old to assume the presidency. In fact, one of his campaign slogans was _Me hago viejo esperando_ ("I grow old waiting"), responding to criticism about his advanced age. 
+
+By arranging the trigrams by president in alphabetical order, we also get an idea of the general theme of their speeches. Fujimori, who we have already mentioned is in prison for human rights violations, including the forced sterilization of thousands of indigenous, poor and Quechua-speaking women as a method to contain poverty, in his first term spoke about "family planning" and "poverty". In his second term, he spoke about "respect for human rights". Another very important topic in his speech is related to productivity, the role of companies in economic development, the economic crisis of that time and terrorism (when he mentions "the armed groups").
+
+On the contrary, Alejandro Toledo does not show any very relevant trigram, except his mention to the armed and police forces. On the other hand, Dina Boluarte does not have a predominant trigram: all of them are repeated only once.  It is to be anticipated, because she took office with only hours of notice, and, therefore, it is expected that she has not had a very structured speech.  Similar happens with Martin Vizcarra and Valentin Paniagua.
 
 ```{r}
 trigrams <-  df_no_stopwords %>%
@@ -306,16 +339,24 @@ ggplot(top_trigrams,
         plot.subtitle = element_text(hjust = 0.5, 
                                      size = 14))
 ```
-Tres de los cuatro NO fueron elegidos democráticamente, sino que asumieron el cargo de emergencia, no tienen trigrams identificados. Por esa razón, aparecen muchos, imposible de leer.
+
+For that reason, as can be seen in the graph above, their bar graphs are almost unreadable. Thus, the trigram analysis gives us an idea of who took office on an emergency basis.
+
 
 ## Sentiment analysis
 
-```{r }
+We will now perform a sentiment analysis of the speeches. For this purpose, other packages that were not seen in class were used. This is because sentiment analysis assigns a label - of level of polarization or sentiment - to words that are used based on lexicons. However, the packages discussed in class are more intended for use with English corpora. Thus, in this section, after searching and testing with other packages, the packages `syuzhet` and `SentimentAnalysis`, were employed. Yet, they may not be as good as those based on English lexicons, which are much more developed.  
+
+The next chunk may take up to a couple of minutes to run: 
+
+```{r sentiment analysis with `SentimentAnalysis` package}
 sentiments_spanish <- analyzeSentiment(df_tokenized$word,
-  language = "spanish"
+  language = "spanish",
+  stemming = TRUE
 )
 head(sentiments_spanish)
 ```
+The following is to view sentiment direction (i.e. positive, neutral and negative):
 
 ```{r}
 df_sentiments <- data.frame(df_tokenized$word,
@@ -326,6 +367,8 @@ df_sentiments
 ```{r}
 table(df_sentiments$sentiment)
 ```
+As can be seen, the vast majority of words were classified as neutral. This includes nouns such as "country", or numbers such as 2021. 
+
 
 ```{r}
 df_sentiments %>%
@@ -349,24 +392,100 @@ df_sentiments %>%
                                      size = 14))
 ```
 
-Now, with the `syuzhet` package. Este paquete asocia textos a 8 emociones y 2 sentimientos. Tanto más excede el valor a 0, más pronunciada es la emoción o sentimiento.
+Now, we will contrast these results with the `syuzhet` package. This package associates texts to 8 emotions and 2 feelings. The more the value exceeds 0, the more pronounced the emotion or feeling is. 
+
+However, we noticed that using this package requires much computational power and takes a long time. For that reason, we freed memory with the `gc()` function and parallelized the process. The parallel computing approach consists of distributing tasks that do not need to be sequential, for them to be executed in a parallel way. Therefore, we can use more than one core —in our case, the laptop on which we performed this exercise has 8 cores— to execute the task. We could potentially parallelize this process on those 8 cores, but in the interest of making this code reproducible, since not every computer has this number of cores, we will use only 4.
+
+We also recommend closing other programs that are not being used.
 
 ```{r parallelization}
+gc()
 cl <- makeCluster(4)
 clusterExport(cl = cl, c("get_sentiment", 
-                         "get_sent_values", "get_nrc_sentiment", "get_nrc_values", "parLapply"))
+                         "get_sent_values", 
+                         "get_nrc_sentiment", 
+                         "get_nrc_values", 
+                         "parLapply"))
 ```
 
 ```{r}
 sentiment_nrc <- get_nrc_sentiment(df_tokenized$word, 
-                                   cl=cl,
+                                   cl = cl,
                                    language = "spanish")
 stopCluster(cl)
 ```
 
+In our case, this computation took 1 minute and 40 secs, and almost 95% of CPU.
+
 ```{r}
 head(sentiment_nrc)
 ```
+Below is an example of 20 words associated with each emotion or feeling. The list is longer, but for space reasons only 20 will be shown. To see the complete list, uncomment the last line of each chunk. 
+
+The order of each emotion or feeling is in alphabetical order: anger, anticipation, disgust, fear, joy, sadness, surprise, trust, negative, positive.
+
+```{r}
+anger <- which(sentiment_nrc$anger > 0)
+head(df_tokenized$word[anger], 20)
+#df_tokenized$word[anger]
+```
+
+```{r}
+anticipation <- which(sentiment_nrc$anticipation > 0)
+head(df_tokenized$word[anticipation], 20)
+#df_tokenized$word[anticipation]
+```
+
+```{r}
+disgust <- which(sentiment_nrc$disgust > 0)
+head(df_tokenized$word[disgust], 20)
+#df_tokenized$word[disgust]
+```
+
+```{r}
+fear <- which(sentiment_nrc$fear > 0)
+head(df_tokenized$word[fear], 20)
+#df_tokenized$word[fear]
+```
+
+```{r}
+joy <- which(sentiment_nrc$joy > 0)
+head(df_tokenized$word[joy], 20)
+# df_tokenized$word[joy]
+```
+
+```{r}
+sadness <- which(sentiment_nrc$sadness > 0)
+head(df_tokenized$word[sadness], 20)
+# df_tokenized$word[sadness]
+```
+
+```{r}
+surprise <- which(sentiment_nrc$surprise > 0)
+head(df_tokenized$word[surprise], 20)
+# df_tokenized$word[surprise]
+```
+
+```{r}
+trust <- which(sentiment_nrc$trust > 0)
+head(df_tokenized$word[trust], 20)
+# df_tokenized$word[trust]
+```
+
+```{r}
+negative <- which(sentiment_nrc$negative > 0)
+head(df_tokenized$word[negative], 20)
+# df_tokenized$word[negative]
+```
+
+```{r}
+positive <- which(sentiment_nrc$positive > 0)
+head(df_tokenized$word[positive], 20)
+#df_tokenized$word[positive]
+```
+
+
+
 
 Results are not as expected. Could they be improved if we lemmatize the words, instead of presenting them in their original form?
 
