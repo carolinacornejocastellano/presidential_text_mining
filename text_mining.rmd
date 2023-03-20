@@ -381,7 +381,7 @@ df_sentiments %>%
   scale_fill_manual(values = brewer.pal(4, "BrBG")) +
   theme_minimal() +
   ggtitle("Most Common Sentiments in Presidential Speeches", 
-          subtitle = "From 1990 to 2022") +
+          subtitle = "From 1990 to 2022, according to the {SentimentAnalysis} package") +
   labs(x = "Sentiment", 
        y = "Frequency", 
        fill = "President") +
@@ -408,7 +408,7 @@ clusterExport(cl = cl, c("get_sentiment",
                          "parLapply"))
 ```
 
-```{r}
+```{r assign sentiment or emotion to words}
 sentiment_nrc <- get_nrc_sentiment(df_tokenized$word, 
                                    cl = cl,
                                    language = "spanish")
@@ -484,72 +484,32 @@ head(df_tokenized$word[positive], 20)
 #df_tokenized$word[positive]
 ```
 
-
-
-
-Results are not as expected. Could they be improved if we lemmatize the words, instead of presenting them in their original form?
-
-```{r stemming}
-df_tokenized_stemm <- dfm(df_tokenized$word,
-                          remove_punct = TRUE, 
-                          stem = TRUE)
-```
-
-```{r stemming}
-df_tokenized_lemma <- df_tokenized %>%
-  mutate(word_lemmatized = lemmatize_words(word, 
-                                           language = "es"))
-
-head(df_tokenized_lemma)
-```
-```{r}
-df_tokenized_stemm <- stemDocument(df_tokenized$word, 
-                                    language = "spanish")
-
-```
+As can be seen below, in an aggregated manner, the "positive" and "trust" words are the most used by Peruvian presidents in recent years, followed by the negative words —although these are almost half of the positive ones—, and the words denoting "fear" and "anticipation": 
 
 ```{r}
-realnews_dfm <- dfm(df_tokenized$word, remove_punct = TRUE, stem = TRUE)
-
+sentiment_nrc %>%  
+  summarise_all(sum) %>% 
+  gather(key = sentiment, 
+         value = number) %>%
+  arrange(desc(number))
 ```
-
-```{r}
-realnews_dfm
-```
-
-```{r}
-set.seed(100)
-
-textplot_wordcloud(realnews_dfm, min_count = 6, random_order = FALSE,
-                   rotation = .25, 
-                   color = RColorBrewer::brewer.pal(8,"Dark2"))
-```
-
-----
-Most common sentiments per president
 
 
 ```{r}
-df_sentiments %>%
-  group_by(Year, President, sentiment) %>%
-  summarise(number = n()) %>% 
-  ggplot(aes(x = sentiment,
-            y=number)) +
-  geom_bar(aes(fill=President),
-              stat = "identity") +
-  scale_fill_manual(values = brewer.pal(length(unique(df_sentiments$President)), "Set3")) +
+sentiment_nrc %>%  
+  summarise_all(sum) %>% 
+  gather(key = sentiment, value = number) %>%
+  ggplot(aes(x = sentiment, y = number, fill = sentiment)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = brewer.pal(10, "BrBG")) +
   theme_minimal() +
   ggtitle("Most Common Sentiments in Presidential Speeches", 
-          subtitle = "From 1990 to 2022") +
-  labs(x = "Sentiment", 
-       y = "Frequency", 
-       fill = "President") +
-  theme(plot.title = element_text(hjust = 0.5, 
-                                  size = 20, 
-                                  face = "bold"),
-        plot.subtitle = element_text(hjust = 0.5, 
-                                     size = 14))
+          subtitle = "From 1990 to 2022, according to the {syuzhet} package") +
+  labs(x = "Sentiment", y = "Frequency", fill = "Sentiment") +
+  theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, size = 14))
 ```
+
 
 ## Latent Dirichlet Allocation
 
