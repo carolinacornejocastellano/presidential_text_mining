@@ -2,13 +2,45 @@
 title: "_Palabras que se las lleva el viento_"
 subtitle: "Exploring presidential inauguration speeches of the last decade"
 output: html_document
+date: \today
+bibliography: ["C:/Users/Carolina/Documents/0cast/biblatex.bib"]
+link-citations: true
+lang: en-US
+linkReferences: true
+nameInLink: true
 ---
 
 ## Introduction
 
-This is a project to explore the priorities of Peruvian governments in the last decade. The data used is the presidential inauguration speeches of the last decade. The speeches are available in the website of the Peruvian Congress. The speeches are in Spanish, so I used Google Translate to translate them to English. The speeches are available in the folder "data".
+As of this writing, the current Peruvian government counts over 66 deaths in just 3 months of government [@rebazaTheySayWe2023]. Dina Boluarte is Peru’s first female president and the sixth person to occupy the presidential chair in four years [@olmoPresidentesAnosPor2022]. She ascended to office on December 7, 2022, after the previous president, elected by popular vote, dissolved the congress after only 16 months in charge and many attempts of being removed from office by Congress.
+
+The analysis of the political motives of the perpetual Peruvian political crisis exceeds the purpose of this exercise. However, it will suffice to mention that, before Boluarte, perhaps the one who aroused the most popular rage was Manuel Merino, who governed alone from November 10 to 15, 2020 —less than a week!— and ended up resigning because of massive protests throughout the country [@redaccionbbcnewsmundoOlaProtestasPeru2020]. The last government that lasted 5 years, the constitutional term of office, was that of Ollanta Humala (2011 - 2016). Since then, mandates have lasted months or even just days. 
+
+This exercise aims to characterize the topics and sentiments addressed in the first Message to the Nation (or inaugural speech) of each of the last 10 presidents. The hypothesis is that their inaugural speeches, analyzed through text mining techniques, will help to characterize the context in which they ascended to power, and that there will be clear differences in the topics, length and sentiments of those who ascended by popular vote, and those who took office by emergency succession.
 
 ## Data
+
+The speeches were manually downloaded in .pdf format from official sources: the archive of the [Congress of the Republic of Peru](https://www.congreso.gob.pe/participacion/museo/congreso/mensajes-presidenciales/) and the [Single Digital Platform of the Peruvian State](https://www.gob.pe/mensajepresidencial]). Only the inaugural speech of Alan Garcia (2006-2011) was not found, as the one of Alejandro Toledo (2001-2006) was wrongly uploaded in its place. Therefore, to complete 10 presidents, the speech of the first period of government of the dictator Alberto Fujimori (1900 - 1995) was also extracted.
+
+These pdf were then converted to markdown, superficially checked for special characters, and uploaded to GitHub so that we could retrieve them directly from there and make this exercise reproducible without the need to attach them. The GitHub repository is accessible [here](https://github.com/carolinacornejocastellano/presidential_text_mining). 
+
+
+Thus, we will work with 10 presidential messages, proclaimed on the following dates:
+
+- Dina Boluarte (December 7, 2022).
+- Pedro Castillo (December 28, 2021)
+- Francisco Sagasti (November 17, 2020)
+- Martin Vizcarra (March 23, 2018).
+- Pedro Pablo Kuczynski (July 28, 2016).
+- Ollanta Humala (July 28, 2011)
+- Alejandro Toledo (July 28, 2001)
+- Valentín Paniagua (November 11, 2000)
+- Alberto Fujimori (second term) (July 28, 1995)
+- Alberto Fujimori (first term) (July 28, 1990)
+
+Of these, Dina Boluarte, Francisco Sagasti, Martín Vizcarra and Valentín Paniagua were not elected by popular vote, but were assigned for different reasons and in different contexts, with different popular approval. There is also a debate about Alberto Fujimori's second term, whether he was legitimately elected or manipulated the results in obedience to his dictatorial spirit. On the other hand, Manuel Merino was not purposely considered: because of the way he took office and his brief period, many do not consider him a president, only a coup plotter or usurper. 
+
+## Pre-processing 
 
 ```{r load libraries}
 libraries <- c(
@@ -26,6 +58,8 @@ libraries <- c(
   "quanteda.textplots",
   "topicmodels",
   "syuzhet",
+  "parallel",
+  "textstem",
   "SentimentAnalysis"
 )
 
@@ -51,7 +85,7 @@ presidents <-
     "Alberto Fujimori first term")
 
 links <- paste0(
-  "https://raw.githubusercontent.com/cornellano/presidential_text_mining/main/",
+  "https://raw.githubusercontent.com/carolinacornejocastellano/presidential_text_mining/main/",
   tolower(gsub(" ", "_", presidents)), ".md")
 ```
 
@@ -79,7 +113,7 @@ df$speech <- df$url %>%
       locale = locale(encoding = "UTF-8")) %>% 
         paste(collapse = "\n"))
 
-# delete URLs from df
+# delete URLs' column from df
 df$url <- NULL
 ```
 
@@ -315,11 +349,66 @@ df_sentiments %>%
                                      size = 14))
 ```
 
-Most common sentiments per president
+Now, with the `syuzhet` package. Este paquete asocia textos a 8 emociones y 2 sentimientos. Tanto más excede el valor a 0, más pronunciada es la emoción o sentimiento.
+
+```{r parallelization}
+cl <- makeCluster(4)
+clusterExport(cl = cl, c("get_sentiment", 
+                         "get_sent_values", "get_nrc_sentiment", "get_nrc_values", "parLapply"))
+```
 
 ```{r}
+sentiment_nrc <- get_nrc_sentiment(df_tokenized$word, 
+                                   cl=cl,
+                                   language = "spanish")
+stopCluster(cl)
+```
+
+```{r}
+head(sentiment_nrc)
+```
+
+Results are not as expected. Could they be improved if we lemmatize the words, instead of presenting them in their original form?
+
+```{r stemming}
+df_tokenized_stemm <- dfm(df_tokenized$word,
+                          remove_punct = TRUE, 
+                          stem = TRUE)
+```
+
+```{r stemming}
+df_tokenized_lemma <- df_tokenized %>%
+  mutate(word_lemmatized = lemmatize_words(word, 
+                                           language = "es"))
+
+head(df_tokenized_lemma)
+```
+```{r}
+df_tokenized_stemm <- stemDocument(df_tokenized$word, 
+                                    language = "spanish")
 
 ```
+
+```{r}
+realnews_dfm <- dfm(df_tokenized$word, remove_punct = TRUE, stem = TRUE)
+
+```
+
+```{r}
+realnews_dfm
+```
+
+```{r}
+set.seed(100)
+
+textplot_wordcloud(realnews_dfm, min_count = 6, random_order = FALSE,
+                   rotation = .25, 
+                   color = RColorBrewer::brewer.pal(8,"Dark2"))
+```
+
+----
+Most common sentiments per president
+
 
 ```{r}
 df_sentiments %>%
