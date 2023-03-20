@@ -573,6 +573,7 @@ class(df_dtm)
 df_dtm
 ```
 
+### 5 topics LDA
 Then, the same model was declared and probabilities of each word to be part of any topic were calculated:
 
 ```{r fit the model with 5 topics}
@@ -591,7 +592,7 @@ df_lda_topics_5
 
 This gave the probability for each word to belong to each topic. Below are the first 20 words for each of the 5 topics. 
 
-```{r top 20 words per topic}
+```{r top 20 words per each of the 5 topics}
 top_terms_topic_5 <- df_lda_topics_5 %>%
   group_by(topic) %>%
   top_n(20, beta) %>%
@@ -647,7 +648,7 @@ document_topic_prob_5
 ```
 For example, it seemed that Pedro Castillo was the most likely to belong to this the first topic. The speech of Alberto Fujimori in his first speech, and the ones of Alejandro Toledo and Martín Vizcarra were the most likely to belong to topic 2. Dina Boluarte, Francisco Sagasti, PPK and Valentín Paniagua belong to topic 3. In the case of Sagasti and PPK, it also made sense that they were together, since they assumed their positions as part of the same party. On other hand, it seemed that only Ollanta Humala speech was part of topic 4. Similar case is that on the speech of Fujimori in his second term, which is alone in the fifth topic.
 
-In the table below you can see the probability of fitting in one of the topics, together with the original speech.
+In the table below, the probability of fitting in one of the topics, together with the original speech, is shown.
 
 ```{r merge the 5 topics with original data}
 document_topic_merged_5 <- df %>%
@@ -659,7 +660,7 @@ document_topic_merged_5
 ```
 To conclude this section, if we could assign only one topic to each inaugural speech, what would it be?:
 
-```{r identify each president's top topic from 5 with LDA model}
+```{r identify each president top topic from 5 with LDA model}
 president_topics_5 <- document_topic_merged_5 %>%
   group_by(president) %>%
   top_n(1, gamma) %>%
@@ -667,7 +668,9 @@ president_topics_5 <- document_topic_merged_5 %>%
 
 president_topics_5
 ```
-There are very similar topics. Maybe 5 is a larger number. We will reduce the number of topics to 2, with the hypothesis that this will help to make the themes of each topic more distinct. The exercise will be very similar. We first fit the model:
+### 2 topics LDA
+
+However, there were very similar topics. Maybe 5 was a large number. We then reduced the number of topics to 2, with the hypothesis that this would help make the themes of each topic more distinct. The exercise was very similar. First, the model was declared:
 
 ```{r fit the model with only 2 topics}
 df_lda_2 <- LDA(df_dtm, 
@@ -675,7 +678,7 @@ df_lda_2 <- LDA(df_dtm,
               control = list(seed = 666))
 df_lda_2
 ```
-Then, we assign a probability to each word:
+Then, a probability to each word was assigned:
 
 ```{r probabilities of words per each of the 2 topics}
 df_lda_topics_2 <- tidy(df_lda_2, 
@@ -684,9 +687,9 @@ df_lda_topics_2 <- tidy(df_lda_2,
 df_lda_topics_2
 ```
 
-Now, let's find out the 20 most probable words for each topic. This could help us understand what is each topic about.
+Later, the 20 most probable words for each topic were found. This could help understand what is each topic about.
 
-```{r top 20 words per topic}
+```{r top 20 words per each of the 2 topics}
 top_terms_topic_2 <- df_lda_topics_2 %>%
   group_by(topic) %>%
   top_n(20, beta) %>%
@@ -695,7 +698,7 @@ top_terms_topic_2 <- df_lda_topics_2 %>%
 
 top_terms_topic_2
 ```
-The following plot reveals which themes are covered in each topic. In a broad sense, although there are some words that are repeated —such as _país_, Perú, _peruanos_, _nacional_, etc.—, it seems that the first topic covers more politics areas and the second one covers more socio-economic ideas. For example, the first is about _gobierno_, _política_, _congreso_, _democracia_, _patria_, and others. The second addresses _salud_, _educación_ and _economía_ issues, talks about _desarrollo_, _empresa_ and quantifies things with _millones_ (millions): it is unclear it it refers to millions of soles (as for proposing projects or programs and their expected cost in soles, the peruvian currency) or millions of peruvians (as the number of beneficiaries for each proposed project). 
+The following plot reveals which themes are covered in each topic. In a broad sense, although there are some words that are repeated —such as _país_, Perú, _peruanos_, _nacional_, etc.—, it seems that the first topic covers more politics areas and the second one covers just a bit more socio-economic ideas. For example, the first is about _gobierno_, _política_, _patria_, _república_ , and others. The second addresses _salud_ (even if the first topic also covers it), _empresa_ and _pobreza_, _derechos_ and _futuro_ issues. However, the boundaries are unclear.
 
 ```{r}
 colors2 <- c( "#bf812d", "#01665e")
@@ -731,10 +734,10 @@ top_terms_topic_2 %>%
         )
 
 ```
-Below we can see which speech (and therefore, which president) could be classified in each cluster. The speeches of Alejandro Toledo, Dina Boluarte, Francisco Sagasti, Martín Vizcarra, Ollanta Humala and Valentín Paniagua are more likely to be classified in the first cluster. The four presidents in our sample who took office by constitutional succession and not by popular vote are included in this cluster. That is, four of six members in this topic were not elected. As for political ideologies, it seems that these do not weigh much in the classification, or else the presidents proclaim themselves to be of a certain wing, but lack more ideological development in their rhetoric: Boluarte was the vice-president of Castillo, the rural left-wing rural leader, and Humala entered with a leftist discourse, although his mandate was more right-wing. These are accompanied in the same topic with Toledo, Vizcarra, who belong to the right or center-right.
+Below it can be seen which speech (and therefore, which president) could be classified in each cluster. The speeches of Dina Boluarte, Ollanta Humala, Pedro Castillo and Valentín Paniagua were more likely to be classified in the first cluster. The three presidents in the sample who took office with a leftist rhetoric were included in this cluster: Boluarte was the vice-president of Castillo, the rural left-wing rural leader, and Humala entered with a leftist discourse, although his mandate was more right-wing. These are accompanied in the same topic with Valentín Paniagua, the transitional president who was only in office for a few months after Fujimori's resignation and which meant the return of democracy.
 
 
-On the other hand, the two speeches of dictator Alberto Fujimori, the one by Pedro Castillo, and the one by PPK are more likely to enter the 2nd topic. It is confusing that, in this case, PPK is not in the same cluster as Vizcarra and Sagasti, since they were part of the same party: PPK resigned and Vizcarra took over. Faced with Vizcarra's dismissal, Sagasti took office 5 days later. However, in terms of the issues addressed, Castillo was recognized for giving more importance to "social" issues and education -because he was a teacher-, and PPK to economic issues. On this last point, his similarity with Fujimori and his idea of the _revolución productiva de los pequeños_ (the productive revolution of the little ones) makes sense.
+On the other hand, the two speeches of dictator Alberto Fujimori (quite obviously), the one by Alejandro Toledo, and the ones by Sagasti, Vizcarra and PPK were more likely to enter the 2nd topic. They were all from the right-wing, neoliberal side of the political spectrum. It is not surprising that the two speeches of Alberto Fujimori entered together in this topic, nor that Sagasti, Vizcarra and PPK were also stick: they three were from the same party. In fact, PPK was elected, but resigned and his vice-president, Vizcarra, took office. Later, he was removed from the presidency and 5 days later Sagasti occupied the position. Regarding their speeches, PPK's focus on economic, business and productivity issues coincides with Fujimori's emphasis on his repeated phrase "the productive revolution of the little ones". 
 
 ```{r assign each of the 2 topics to the speeches}
 document_topic_prob_2 <- tidy(df_lda_2, 
@@ -751,9 +754,9 @@ document_topic_merged_2 <- df %>%
 
 document_topic_merged_2
 ```
-So, to conclude, the following table summarizes more easily which topic each one would belong to, as mentioned above.
+So, to conclude, the following table summarized more easily which topic each one would belong to, as mentioned above.
 
-```{r identify each president's top topic from 2 with LDA model}
+```{r identify each president top topic from 2 with LDA model}
 president_topics_2 <- document_topic_merged_2%>%
   group_by(president) %>%
   top_n(1, gamma) %>%
@@ -770,7 +773,7 @@ Starting with the latter, because the texts of interest are in Spanish, translat
 
 Regarding the characterization of the speeches, these are full of platitudes and lack references to more concrete issues. They are more focused on the romantic than on the programmatic. Dina Boluarte's speech is particularly scarce, as it does not even have trigrams with more than 2 appearances, and only two bigrams with more than 2 mentions, which also do not have much meaning. Another aspect, even shocking, that this analysis helped to uncover are the mentions of family planning and human rights issues by Fujimori, in his two terms in office. He, who committed atrocities in these two fields, mentioned them more frequently than others in his inaugural speeches. 
 
-Also, in terms of the sentiments of the speeches, one of the packages assigned the vast majority of words as neutral in tone. These results did not seem correct. However, an additional package was able to identify more nuances: 1724 tokens were identified as "positive", being this the mode. This was followed by words classified as trust, negative, and fear. The least used were those of disgust and surprise.
+Also, in terms of the sentiments of the speeches, one of the packages assigned the vast majority of words as neutral in tone. These results did not seem correct. However, an additional package was able to identify more nuances: more than 1500 tokens were identified as "positive", being this the mode. This was followed by words classified as trust, negative, and fear. The least used were those of disgust and surprise.
 
 Regarding the hypotheses, these techniques more or less helped to understand the contexts of each assumption of office, as in the case of the topics addressed by Fujimori -human rights, family planning-, those of Castillo -health in the midst of the Covid-19 pandemic, education, etc.-, those of PPK -who repeated several times the idea of the Bicentenary of the Independence of Peru in 2021, although in the end he did not arrive in office until that date- or the length of his texts, those of PPK -who repeated several times the idea of the Bicentenary of the Independence of Peru in 2021, although in the end he did not arrive in office until that date- or the length of their texts, as in the case of Boluarte and Paniagua, in whom it is difficult to identify bigrams or trigrams with a greater number of repetitions. Differences can be seen between those who were elected in elections and those who were promoted to the position by succession or designation. 
 
