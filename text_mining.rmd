@@ -1,31 +1,26 @@
 ---
 title: "_Palabras que se las lleva el viento_"
-subtitle: "Exploring presidential inauguration speeches of the last decade"
+subtitle: "Exploring the last 10 inauguration speeches of Peruvian presidents"
 output: html_document
 date: \today
-bibliography: ["C:/Users/Carolina/Documents/0cast/biblatex.bib"]
-link-citations: true
-lang: en-US
-linkReferences: true
-nameInLink: true
 ---
 
 ## Introduction
 
-As of this writing, the current Peruvian government counts over 66 deaths in just 3 months of government [@rebazaTheySayWe2023]. Dina Boluarte is Peru’s first female president and the sixth person to occupy the presidential chair in four years [@olmoPresidentesAnosPor2022]. She ascended to office on December 7, 2022, after the previous president, elected by popular vote, dissolved the congress after only 16 months in charge and many attempts of being removed from office by Congress.
+As of this writing, the current Peruvian government counts over 66 deaths in less than 4 months of government (Rebaza and Guy, 2023). Dina Boluarte is Peru’s first female president and the sixth person to occupy the presidential chair in four years (Olmo, 2022). She ascended to office on December 7, 2022, after the previous president, elected by popular vote, dissolved the congress after only 16 months in charge and many attempts of being removed from office by the congress.
 
-The analysis of the political motives of the perpetual Peruvian political crisis exceeds the purpose of this exercise. However, it will suffice to mention that, before Boluarte, perhaps the one who aroused the most popular rage was Manuel Merino, who governed alone from November 10 to 15, 2020 —less than a week!— and ended up resigning because of massive protests throughout the country [@redaccionbbcnewsmundoOlaProtestasPeru2020]. The last government that lasted 5 years, the constitutional term of office, was that of Ollanta Humala (2011 - 2016). Since then, mandates have lasted months or even just days. 
+The analysis of the political motives of the perpetual peruvian political crisis exceeds the purpose of this exercise. However, it will suffice to mention that, before Boluarte, perhaps the one who aroused the most popular rage was Manuel Merino, who governed alone from November 10 to 15, 2020 —less than a week!— and ended up resigning because of massive protests throughout the country (Redacción BBC Mundo, 2020). The last government that lasted 5 years, the constitutional term of office, was that of Ollanta Humala (2011 - 2016). Since then, mandates have lasted months or even just days. 
 
-This exercise aims to characterize the topics and sentiments addressed in the first Message to the Nation (or inaugural speech) of each of the last 10 presidents. The hypothesis is that their inaugural speeches, analyzed through text mining techniques, will help to characterize the context in which they ascended to power, and that there will be clear differences in the topics, length and sentiments of those who ascended by popular vote, and those who took office by emergency succession.
+This exercise aims to characterize the topics and sentiments addressed in the last 10 Message to the Nation (or inaugural speech) in Peru. The hypothesis is that the inaugural speeches, analyzed through text mining techniques, will help to characterize the context in which each president ascended to power, and that there will be clear differences in the topics and length of those who ascended by popular vote, and those who took office by emergency succession. Besides, negative-related sentiments will be predominant in general.
 
 ## Data
 
-The speeches were manually downloaded in .pdf format from official sources: the archive of the [Congress of the Republic of Peru](https://www.congreso.gob.pe/participacion/museo/congreso/mensajes-presidenciales/) and the [Single Digital Platform of the Peruvian State](https://www.gob.pe/mensajepresidencial]). Only the inaugural speech of Alan Garcia (2006-2011) was not found, as the one of Alejandro Toledo (2001-2006) was wrongly uploaded in its place. Therefore, to complete 10 presidents, the speech of the first period of government of the dictator Alberto Fujimori (1900 - 1995) was also extracted.
+The speeches were manually downloaded in .pdf format from official sources: the archive of the [Congress of the Republic of Peru](https://www.congreso.gob.pe/participacion/museo/congreso/mensajes-presidenciales/) and the [Single Digital Platform of the Peruvian State](https://www.gob.pe/mensajepresidencial]). Only the inaugural speech of Alan Garcia (2006-2011) was not found, as the one of Alejandro Toledo (2001-2006) was wrongly uploaded in its place. Therefore, to complete 10 presidents, the speech of the first period of government of the dictator Alberto Fujimori (1900-1995) was also extracted.
 
-These pdf were then converted to markdown, superficially checked for special characters, and uploaded to GitHub so that we could retrieve them directly from there and make this exercise reproducible without the need to attach them. The GitHub repository is accessible [here](https://github.com/carolinacornejocastellano/presidential_text_mining). 
+These pdf were then converted to markdown, superficially checked for special characters, and uploaded to GitHub so that they could be retrieved from there directly. It could help make this exercise reproducible without the need to attach them. The GitHub repository is accessible [here](https://github.com/carolinacornejocastellano/presidential_text_mining). 
 
 
-Thus, we will work with 10 presidential messages, proclaimed on the following dates:
+Thus, 10 presidential speeches were selected. These were proclaimed on the following dates:
 
 - Dina Boluarte (December 7, 2022).
 - Pedro Castillo (December 28, 2021)
@@ -38,11 +33,11 @@ Thus, we will work with 10 presidential messages, proclaimed on the following da
 - Alberto Fujimori (second term) (July 28, 1995)
 - Alberto Fujimori (first term) (July 28, 1990)
 
-Of these, Dina Boluarte, Francisco Sagasti, Martín Vizcarra and Valentín Paniagua were not elected by popular vote, but were assigned for different reasons and in different contexts, with different popular approval. There is also a debate about Alberto Fujimori's second term, whether he was legitimately elected or manipulated the results in obedience to his dictatorial spirit. On the other hand, Manuel Merino was not purposely considered: because of the way he took office and his brief period, many do not consider him a president, only a coup plotter or usurper. 
+Dina Boluarte, Francisco Sagasti, Martín Vizcarra and Valentín Paniagua were not elected by popular vote, but assigned for different reasons and in different contexts, with different popular approval. There is also a debate about Alberto Fujimori's second term: whether he was legitimately elected or manipulated the results in obedience to his dictatorial spirit. On the other hand, Manuel Merino was not considered on purpose: because of the way he took office and his brief period (5 days), many do not consider him a president, only a coup plotter or usurper. 
 
 ## Dataframe creation
 
-```{r}
+```{r libraries}
 libraries <- c(
   "tidyverse",
   "tidytext",
@@ -75,7 +70,7 @@ for (lib in libraries) {
 rm(lib, libraries)
 ```
 
-The speeches were downloaded from the GitHub repository. The following steps are to automatically create the download link for each given the username and repository name:
+The following steps are to automatically create the download link for each given the username and repository name:
 
 ```{r download speeches}
 presidents <-
@@ -95,7 +90,7 @@ links <- paste0(
   tolower(gsub(" ", "_", presidents)), ".md")
 ```
 
-Then, the dataframe was created:
+Then, a first dataframe without the speeches was created:
 ```{r create df}
 df <- tibble(
   president = presidents,
@@ -113,7 +108,7 @@ df <- tibble(
 )
 ```
 
-And then we download the speeches. In this way, we will obtain a dataframe with 3 columns: president, date of the speech and the entire speech, in a single line for each president:
+After that, the speeches were downloaded from the [GitHub](https://github.com/carolinacornejocastellano/presidential_text_mining) repository. In this way, a dataframe with 3 columns was obtained: president, date and the entire speech in a single line for each president:
 
 ```{r read speeches}
 df$speech <- df$url %>% 
@@ -124,16 +119,16 @@ df$speech <- df$url %>%
 # delete URLs' column from df, as they are not longer needed
 df$url <- NULL
 
-head(df)
+df
 ```
 
 ## Data preparation
 
-Now we will tokenize the speeches and remove stopwords. Since the language of the speeches is Spanish, we chose to conduct the analysis in Spanish. We considered that translating them could add a degree of bias, since many online translation services perform very literal translations and/or make the real meaning of what was said at the time get lost. 
+The next step was to tokenize the speeches and remove stopwords. Since the language of the speeches is Spanish, it was preferred to conduct the analysis in Spanish. It was considered that translating them could add a degree of bias, since many online translation services perform very literal translations and/or make the real meaning of what was said get lost. 
 
-However, as we will see later on, analyzing the Spanish texts was a challenge in itself, since the stopwords, sentiment analysis, lemmatization and stemming packages, etc., are mostly built for English corpora. In some cases, we had to add additional parameters or use other packages to do the same as what we learned in the classes with English texts. 
+However, as it will be seen later on, analyzing the Spanish texts was a challenge in itself since the packages for stopwords, sentiment analysis, lemmatization and stemming, etc., are mostly built for English corpora, or their default settings are for English. In some cases, it was necessary to add additional parameters or to use other packages to do the same as what it was taught in class. 
 
-Next, to remove the English stopwords, we store them in a vector. Then, we split the column of speechs into tokens with the `unnest_tokens()` function from the `tidytext` package. Subsequently, we removed those tokens that matched the stopwords stored in the vector.
+The stopwords in Spanish were stored in a vector. Then, the speeches column was split into tokens with the `unnest_tokens()` function from the `tidytext` package. Subsequently, the tokens that matched the stopwords stored in the vector were deleted.
 
 ```{r store stopwords in Spanish as a vector}
 stopwords_es <- stopwords::stopwords("es",
@@ -157,7 +152,7 @@ df_tokenized <- df_no_stopwords %>%
   filter(!word %in% stopwords_es)
 ```
 
-Below we can see which were the most used words in a given speech, and which president used them the most. It can be seen that Pedro Pablo Kuczynski (PPK) leads the ranking, mentioning the common place _país_ (country) 32 times in his speech. Pedro Castillo also used that word repeatedly. This is interesting because both come from totally different political -and personal- spectrums: PPK, of Polish origin and upper income class, has been in Peruvian politics for decades: is an economist, businessman and former Minister of Economy, and a neoliberal who studied all his degrees in US and UK universities. On the other hand, Pedro Castillo, from the conservative left, was a rural school teacher in Cajamarca, one of the poorest regions of Peru, with no experience as a politician. Both mentioned _país_ (country) repeatedly. Regarding a word that can give us an idea of the priorities of a president at the beginning of his government, in the case of Pedro Castillo, the word _salud_ (health) was repeated 28 times. This makes sense, since he took office at a time when the Covid-19 pandemic was still killing thousands of people in Peru.  It is clear that public health policies were an important theme in his first speech.
+Below, the most used words in a given speech are shown. It can be seen that Pedro Pablo Kuczynski (PPK) leads the ranking, mentioning the commonplace _país_ (country) 28 times in his speech, and _salud_ (health) 18 times. Pedro Castillo also used those words repeatedly. This is interesting because both come from totally different political —and personal— spectrums: PPK, of Polish origin and upper income class, has been in Peruvian politics for decades: he is an economist, businessman and former Minister of Economy, and a neoliberal who studied all his degrees in US and UK universities. On the other hand, Pedro Castillo, from the conservative left, was a rural school teacher in Cajamarca, one of the poorest regions of Peru, with no experience as a politician. Regarding a word that can give us an idea of the priorities of a president at the beginning of his government, as already told, in the case of Pedro Castillo, the word _salud_ (health) was repeated 24 times. This makes sense, since he took office at a time when the Covid-19 pandemic was still killing thousands of people in Peru. It is clear that public health policies were an important theme in his first speech.
 
 Another case worth mentioning is the reference to the word _pueblo_ (town, nation or working class) in the inauguration of the second term of dictator Alberto Fujimori. He also mentioned _desarrollo_ (development) a lot and, towards the fourth tab of results, it is seen that he mentioned _derechos_ (rights) and _humanos_ (human) 12 times. It is peculiar because he is now facing sentences, among other reasons, for systematic violations of human rights. For example, his "family planning" policies, which consisted of forced sterilization of women in the poorest and most remote areas of Peru, often Quechua-speaking, were among his most notorious cases. In his fight against terrorism, he also ordered innocent and poor people to be killed massively for being "suspects".
 
@@ -168,7 +163,7 @@ df_tokenized %>%
   )
 ```
 
-Below is a graph representing the most used words by each president. Specifically, those words used more than 7 times are shown. For that reason, some presidents —Valentín Paniagua and Dina Boluarte— are not shown. This is to be expected, because they took office by emergency: it is understandable that they did not have a speech as extensive and prepared as those elected by popular vote. Even Francisco Sagasti and Martin Vizcarra, who are included in the graph, are the two who show the fewest words above 7 repetitions among all the others: they also took office on an emergency basis, with only a few hours' pre-notification.
+Below is a graph representing the most used words by each president. Specifically, those words used more than 7 times are shown. Some presidents —Valentín Paniagua and Dina Boluarte— are not shown for not repeating any word more than 7 times. This is to be expected, because they took office by emergency: it is understandable that they did not have a speech as extensive and prepared as those elected by popular vote. Even Francisco Sagasti and Martin Vizcarra, who are included in the graph, are the two who show the fewest words above 7 repetitions among all the others: they also took office on an emergency basis, with only a few hours' pre-notification.
 
 ```{r plot the most common words in presidential speeches}
 df_tokenized %>% 
@@ -208,7 +203,7 @@ df_tokenized %>%
 
 ## N-grams
 
-We will analyze the most common bigrams. Below the top 20 bigrams can be seen:
+The most common bigrams were be analyzed. Below are the top 20 bigrams:
 
 ```{r most common bigrams in all speeches}
 df_no_stopwords %>%
@@ -218,17 +213,17 @@ df_no_stopwords %>%
                 n = 2) %>%
   filter(!is.na(bigram)) %>%
   count(bigram, sort = TRUE) %>% 
-  head(20)
+  head(20) # onyl the first 20
 ```
 Similar to what has already been mentioned, the reference to human rights (_derechos humanos_) is constant in the discourse of Alberto Fujimori's second term. Without reading his speech, but knowing in broad terms the reasons for which he is accused, one might think that in his speech he was already defending himself against accusations of human rights violations. 
 
-PPK mentioned the bigrams _año 2021_ (year 2021) and _año Bicentenario_ (Bicentennial year) a lot because, upon taking office in 2016, he was going to be the president to receive the Bicentennial of Peru's Independence on 2021. However, he resigned from office much earlier.
+Probably, PPK mentioned the bigrams _año 2021_ (year 2021) and _año Bicentenario_ (Bicentennial year) many times because, upon taking office in 2016, he was excited to be the president in office in 2021, the year of the the Bicentennial of Peru's Independence. However, he resigned from office much earlier for disputes with the congress.
 
-On the other hand, the _asamblea constityente_ Constituent Assembly was Pedro Castillo's main campaign promise to reform the constitution. 
+On the other hand, the _asamblea constityente_ (Constituent Assembly) was Pedro Castillo's main campaign promise to reform the constitution. 
 
 Another important feature is the mention of social issues by the two presidents who took office after running for the left: Ollanta Humala —although he later made a neoliberal right-wing government— and Pedro Castillo. The former spoke repeatedly about _inclusión social_ (social inclusion), and the latter about _protección social_ (social protection).
 
-Below are the top 2 bigrams for each president. However, since there are many bigrams that are repeated an equal number of times, there are many ties in the top 2, so more are actually shown.
+Below are the top 2 bigrams for each president. However, since there are many bigrams that are repeated an equal number of times, there are many ties in the top 2, so more bigrams are actually shown.
 
 ```{r}
 bigrams <-  df_no_stopwords %>%
@@ -237,21 +232,21 @@ bigrams <-  df_no_stopwords %>%
                 token = "ngrams", 
                 n = 2)
 
-# Bigrams by president
+# bigrams by president
 bigram_counts <- bigrams %>%
   count(president, 
         bigram, 
         sort = TRUE)
 
-# Top bigrams for each president
+# top bigrams for each president
 top_bigrams <- bigram_counts %>%
   group_by(president) %>%
-  top_n(2, n) %>%
+  top_n(2, n) %>% # only the top 2, although there are many ties
   arrange(president)
 
 top_bigrams
 ```
-The following graph shows the most common bigrams. However, the plot does not show well in the inline preview. Please, click in "Show in New window" button for it to be displayed well:
+The following graph shows the most common bigrams. However, the plot does not show well in the inline preview. Please, click in "Show in New window" button for it to be better displayed:
 
 ```{r bigrams plot}
 ggplot(top_bigrams, 
@@ -276,7 +271,7 @@ ggplot(top_bigrams,
                                      size = 14))
 
 ```
-Now, let's take a look to the most common trigrams:
+Next, the most common trigrams were identified:
 
 ```{r}
 df_no_stopwords %>%
@@ -286,14 +281,14 @@ df_no_stopwords %>%
                 n = 3) %>%
   filter(!is.na(trigram)) %>%
   count(trigram, sort = TRUE) %>% 
-  head(20)
+  head(20) # only the first 20
 ```
 
-In the case of PPK, references to the year 2021 as the year of the Bicentennial of the Independence of Peru are repeated. However, the theme of _país moderno significa_, alluding to "modernization", is also very present. It could be thought that his allusion to modernization was in response to one of the main criticisms against him during his campaign: that he is an "old school" politician who has been decades without making a significant contribution to the country from his positions in the executive and legislative offices, and that he is too old to assume the presidency. In fact, one of his campaign slogans was _Me hago viejo esperando_ ("I grow old waiting"), responding to criticism about his advanced age. 
+In the case of PPK, references to the year 2021 as the year of the Bicentennial of the Independence of Peru are repeated. However, the theme of _país moderno significa_, alluding to an idea of "modernization", is also very present. It could be thought that his allusion to modernization was in response to one of the main criticisms against him during his campaign: that he is an "old school" politician who has been decades without making a significant contribution to the country from his positions in the executive and legislative offices, and that he is too old to assume the presidency. In fact, one of his campaign slogans was _Me hago viejo esperando_ ("I grow old waiting"), responding to criticism about his advanced age. 
 
-By arranging the trigrams by president in alphabetical order, we also get an idea of the general theme of their speeches. Fujimori, who we have already mentioned is in prison for human rights violations, including the forced sterilization of thousands of indigenous, poor and Quechua-speaking women as a method to contain poverty, in his first term spoke about "family planning" and "poverty". In his second term, he spoke about "respect for human rights". Another very important topic in his speech is related to productivity, the role of companies in economic development, the economic crisis of that time and terrorism (when he mentions "the armed groups").
+By arranging the trigrams by president in alphabetical order, we also get an idea of the general theme of their speeches. Fujimori, who we have already mentioned is in prison for human rights violations, including the forced sterilization of thousands of indigenous, poor and Quechua-speaking women as a method to contain poverty, in his first term spoke about "family planning" and "poverty". In his second term, he spoke about _respeto derechos humanos_ "respect for human rights". Another very important topic in his speech is related to productivity, the role of companies in economic development, the economic crisis of that time and terrorism (when he mentions _grupos alzados armas_, "the armed groups").
 
-On the contrary, Alejandro Toledo does not show any very relevant trigram, except his mention to the armed and police forces. On the other hand, Dina Boluarte does not have a predominant trigram: all of them are repeated only once.  It is to be anticipated, because she took office with only hours of notice, and, therefore, it is expected that she has not had a very structured speech.  Similar happens with Martin Vizcarra and Valentin Paniagua.
+On the contrary, Alejandro Toledo does not show any very relevant trigram, except his mention to the armed and police forces. On the other hand, Dina Boluarte does not have a predominant trigram: all of them are repeated only once, and that is the reason the table below is cluttered.  It is to be anticipated, because she took office with only hours of notice, and, therefore, it is expected that she has not had a very structured speech. Similar happens with Martin Vizcarra and Valentin Paniagua.
 
 ```{r}
 trigrams <-  df_no_stopwords %>%
@@ -308,7 +303,7 @@ trigram_counts <- trigrams %>%
         trigram, 
         sort = TRUE)
 
-# Top bigrams for each president
+# top trigrams for each president
 top_trigrams <- trigram_counts %>%
   group_by(president) %>%
   top_n(2, n) %>%
@@ -316,6 +311,7 @@ top_trigrams <- trigram_counts %>%
 
 top_trigrams
 ```
+As can be seen in the graph above, their bar graphs are almost unreadable. Thus, the trigram analysis gives us an idea of who took office on an emergency basis. If not shown correctly, please, open the graph in a new window.
 
 ```{r}
 ggplot(top_trigrams, 
@@ -340,14 +336,13 @@ ggplot(top_trigrams,
                                      size = 14))
 ```
 
-For that reason, as can be seen in the graph above, their bar graphs are almost unreadable. Thus, the trigram analysis gives us an idea of who took office on an emergency basis.
 
 
 ## Sentiment analysis
 
-We will now perform a sentiment analysis of the speeches. For this purpose, other packages that were not seen in class were used. This is because sentiment analysis assigns a label - of level of polarization or sentiment - to words that are used based on lexicons. However, the packages discussed in class are more intended for use with English corpora. Thus, in this section, after searching and testing with other packages, the packages `syuzhet` and `SentimentAnalysis`, were employed. Yet, they may not be as good as those based on English lexicons, which are much more developed.  
+A sentiment analysis of the speeches was also performed. For this purpose, other packages than those seen in class were used. The reason behind this was that  sentiment analysis assigns a label —of level of polarization or sentiment— to words that are used based on lexicons. However, the packages discussed in class are more intended for use with English corpora. Thus, in this section, after searching and testing with other packages, the packages `SentimentAnalysis` and `syuzhet` were employed. Yet, they may not be as good as those based on English lexicons, which are much more developed.  
 
-The next chunk may take up to a couple of minutes to run: 
+The next chunk employs the `SentimentAnalysis` pacakge and may take up to 30 seconds to run: 
 
 ```{r sentiment analysis with `SentimentAnalysis` package}
 sentiments_spanish <- analyzeSentiment(df_tokenized$word,
@@ -356,19 +351,19 @@ sentiments_spanish <- analyzeSentiment(df_tokenized$word,
 )
 head(sentiments_spanish)
 ```
-The following is to view sentiment direction (i.e. positive, neutral and negative):
+The following is to view sentiment direction (i.e. positive, neutral and negative), as a way to summarize a bit the prior results:
 
 ```{r}
 df_sentiments <- data.frame(df_tokenized$word,
   sentiment = convertToDirection(sentiments_spanish$SentimentGI))
-df_sentiments
-```
 
+head(df_sentiments, 20)
+```
+With the following, the sentiments of the presidential messages in general are further summarized:
 ```{r}
 table(df_sentiments$sentiment)
 ```
 As can be seen, the vast majority of words were classified as neutral. This includes nouns such as "country", or numbers such as 2021. 
-
 
 ```{r}
 df_sentiments %>%
@@ -392,13 +387,13 @@ df_sentiments %>%
                                      size = 14))
 ```
 
-Now, we will contrast these results with the `syuzhet` package. This package associates texts to 8 emotions and 2 feelings. The more the value exceeds 0, the more pronounced the emotion or feeling is. 
+These results were contrasted with the `syuzhet` package. This package associates texts to 8 emotions and 2 feelings. The more the value exceeds 0, the more pronounced the emotion or feeling is. 
 
-However, we noticed that using this package requires much computational power and takes a long time. For that reason, we freed memory with the `gc()` function and parallelized the process. The parallel computing approach consists of distributing tasks that do not need to be sequential, for them to be executed in a parallel way. Therefore, we can use more than one core —in our case, the laptop on which we performed this exercise has 8 cores— to execute the task. We could potentially parallelize this process on those 8 cores, but in the interest of making this code reproducible, since not every computer has this number of cores, we will use only 4.
+However, it was noticed that using this package required much computational power and took a long time. For that reason, some memory was freed with the `gc()` function and the process was parallelized. The parallel computing approach consists of distributing tasks that do not need to be sequential, for them to be executed in a parallel way. Therefore, more than one core can be used —in this case, the laptop on which this exercise was done has 8— to execute the task. This process could potentially be parallelized on 8 threads, but in the interest of making this code reproducible since not every computer has this number of cores, only 4 were harnessed.
 
-We also recommend closing other programs that are not being used.
+It is also recommended closing other programs that are not being used.
 
-```{r parallelization}
+```{r identifying cores}
 gc()
 cl <- makeCluster(4)
 clusterExport(cl = cl, c("get_sentiment", 
@@ -408,21 +403,25 @@ clusterExport(cl = cl, c("get_sentiment",
                          "parLapply"))
 ```
 
-```{r assign sentiment or emotion to words}
+```{r assign sentiment or emotion to words with parallel computing}
 sentiment_nrc <- get_nrc_sentiment(df_tokenized$word, 
                                    cl = cl,
                                    language = "spanish")
 stopCluster(cl)
 ```
 
-In our case, this computation took 1 minute and 40 secs, and almost 95% of CPU.
+With this approach, this computation took 1 minute and 40 secs, and almost 95% of CPU.
 
 ```{r}
 head(sentiment_nrc)
 ```
-Below is an example of 20 words associated with each emotion or feeling. The list is longer, but for space reasons only 20 will be shown. To see the complete list, uncomment the last line of each chunk. 
+A summary of the sentiments and emotions of this package can be seen. Judging by the mean, words with a positive tone are predominant:
+```{r}
+summary(sentiment_nrc)
+```
+The order of each emotion or feeling is in alphabetical order: anger, anticipation, disgust, fear, joy, sadness, surprise, trust, negative, positive. This analysis will be done in a general sense, rather than for each president. 
 
-The order of each emotion or feeling is in alphabetical order: anger, anticipation, disgust, fear, joy, sadness, surprise, trust, negative, positive.
+Hereunder, an example of 20 words associated with each emotion or feeling can be read. The list is longer, but for space reasons only 20 are shown. To see the complete list, uncomment the last line of each chunk. 
 
 ```{r}
 anger <- which(sentiment_nrc$anger > 0)
@@ -484,7 +483,7 @@ head(df_tokenized$word[positive], 20)
 #df_tokenized$word[positive]
 ```
 
-As can be seen below, in an aggregated manner, the "positive" and "trust" words are the most used by Peruvian presidents in recent years, followed by the negative words —although these are almost half of the positive ones—, and the words denoting "fear" and "anticipation": 
+As can be seen next, in an aggregated manner, the "positive" and "trust" words are the most used by Peruvian presidents in recent years, followed by the negative words —these are almost half of the positive ones—, and the words denoting "fear" and "anticipation": 
 
 ```{r}
 sentiment_nrc %>%  
@@ -498,53 +497,290 @@ sentiment_nrc %>%
 ```{r}
 sentiment_nrc %>%  
   summarise_all(sum) %>% 
-  gather(key = sentiment, value = number) %>%
-  ggplot(aes(x = sentiment, y = number, fill = sentiment)) +
+  gather(key = sentiment, 
+         value = number) %>%
+  ggplot(aes(x = sentiment, 
+             y = number, 
+             fill = sentiment)) +
   geom_bar(stat = "identity") +
   scale_fill_manual(values = brewer.pal(10, "BrBG")) +
   theme_minimal() +
   ggtitle("Most Common Sentiments in Presidential Speeches", 
           subtitle = "From 1990 to 2022, according to the {syuzhet} package") +
-  labs(x = "Sentiment", y = "Frequency", fill = "Sentiment") +
-  theme(plot.title = element_text(hjust = 0.5, size = 20, face = "bold"),
-        plot.subtitle = element_text(hjust = 0.5, size = 14))
+  labs(x = "Sentiment", 
+       y = "Frequency", 
+       fill = "Sentiment") +
+  theme(plot.title = element_text(hjust = 0.5, 
+                                  size = 20, 
+                                  face = "bold"),
+        plot.subtitle = element_text(hjust = 0.5, 
+                                     size = 14))
 ```
 
+## Topic modelling
 
-## Latent Dirichlet Allocation
+Next, topic modelling was conducted. According to  Silge and Robinson (2017), Latent Dirichlet allocation (LDA) is one of the most common algorithms for it. It is guided by two principles:
+- each document is a mixture of topics, and
+- every topic is a mixture of words (Silge and Robinson, 2017).
 
-```{#r}
-# Create a Document-Term Matrix (DTM)
-dtm <- df_tokenized %>%
+The authors comment that LDA is a mathematical method for estimating both at the same time. In this way, associations between the discourses can be found.
+
+The first step towards LDA was to turn the dataframe into a DocumentTermMatrix (DTM).
+
+```{r create the DTM}
+df_dtm <- df_tokenized %>%
   count(president, word) %>%
   cast_dtm(president, word, n)
 
-# LDA model with 5 topics
-lda_model <- LDA(dtm, k = 5)
+class(df_dtm) # to verify it is of class "DocumentTermMatrix"
+df_dtm
+```
 
-# Get the probabilities of words per topic
-term_topic_prob <- tidy(lda_model, matrix = "beta")
+Later, a fixed number of topics to be found was established. For no particular reason, it was chosen to find 5.
 
-# Top 10 words per topic
-top_terms <- term_topic_prob %>%
+```{r}
+df_lda_5 <- LDA(df_dtm, 
+              k = 5, 
+              control = list(seed = 666))
+df_lda_5
+```
+At this point, even though no output could be read, the model was already declared.
+
+```{r probabilities of words per each of the 5 topics}
+df_lda_topics_5 <- tidy(df_lda_5, 
+                      matrix = "beta")
+
+df_lda_topics_5
+```
+Note that numbers appeared first in the "term" column. This could be confusing. However, starting from page 4 of the results the terms were shown. Therefore, at this point, numbers were deleted from the corpus, always taking into consideration that there were some numbers, such as 2021, that were important in the presidential speeches. 
+
+```{r create a df with no numbers}
+sum(str_detect(df_tokenized$word, "^\\d+(,\\d{3})*(\\.\\d+)?$")) #to identify numbers before deleting them
+
+df_tokenized_no_numbers <- df_tokenized %>%
+  filter(!str_detect(word, "^\\d+(,\\d{3})*(\\.\\d+)?$"))
+
+sum(str_detect(df_tokenized_no_numbers$word, "^\\d+(,\\d{3})*(\\.\\d+)?$")) # to check that we have effectively deleted them
+
+```
+A new DTM was created, overwriting the first one:
+```{r create the DTM without numbers as words}
+df_dtm <- df_tokenized_no_numbers %>%
+  count(president, word) %>%
+  cast_dtm(president, word, n)
+
+class(df_dtm)
+df_dtm
+```
+
+Then, the same model was declared and probabilities of each word to be part of any topic were calculated:
+
+```{r fit the model with 5 topics}
+df_lda_5 <- LDA(df_dtm, 
+              k = 5, 
+              control = list(seed = 666))
+df_lda_5
+```
+
+```{r probabilities of words per each of the 5 topics, excluding numbers as words}
+df_lda_topics_5 <- tidy(df_lda_5, 
+                      matrix = "beta")
+
+df_lda_topics_5
+```
+
+This gave the probability for each word to belong to each topic. Below are the first 20 words for each of the 5 topics. 
+
+```{r top 20 words per topic}
+top_terms_topic_5 <- df_lda_topics_5 %>%
   group_by(topic) %>%
-  top_n(10, beta) %>%
+  top_n(20, beta) %>%
   ungroup() %>%
   arrange(topic, -beta)
 
-# Assign topics to documents
-document_topic_prob <- tidy(lda_model, matrix = "gamma")
+top_terms_topic_5
+```
+In topic 1, the most likely word is _salud_, followed by _país_ (country) and _nacional_ (national). Other topics are Peru, _pueblo_ and _gobierno_ (government). Topic 2 is characterized by topics such as _pobreza_ (poverty), _desarrollo_ (development), _future_ (future) and _educación_ (education). Topic 3 talks also about _salud_, _año_ (year), _bicentenario_ (Bicentennial, probably regarding the 200 aniversary of Peru independence in 2021) and _jóvenes_ (youth). Topic 4 coincides with some of the previous topics in terms of _social_, Peru, but also mentions _democracia_ (democracy) and _patria_, _crecimiento_ (growth), _sistema_ (system), etc. Finally, topic 5 is related to _gobierno_, _desarrollo_ (development), _derechos_ (rights), _corrupción_ (corruption), _empresas_ (companies), etc. However, in almost all topics the first general words are repeated: _país_, Peru y _nacional_.
 
-# Merge topics with original data
-document_topic_merged <- df_no_stopwords %>%
-  left_join(document_topic_prob,
+If the following graphic is not clearly visible, I would appreciate it if you could enlarge it by opening it in a separate window:
+
+```{r plot top terms by topic(5)}
+colors_5 <- c("#543005", "#bf812d", "#80cdc1", "#01665e", "#003c30")
+
+top_terms_topic_5 %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, 
+             fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, 
+             scales = "free") +
+  scale_y_reordered() +
+  scale_fill_manual(values = colors_5) +
+  theme_minimal() +
+  ggtitle("Top Terms by Topic", 
+          subtitle = "From 1990 to 2022") +
+  labs(
+      x = "Beta Coefficient",
+      y = "Term",
+      fill = "Topic"
+      ) +
+  theme(
+        plot.title = element_text(
+                      hjust = 0.5,
+                      size = 20,
+                      face = "bold"
+                      ),
+        plot.subtitle = element_text(
+                        hjust = 0.5,
+                        size = 14
+                        ),
+        legend.position = "bottom"
+        )
+```
+Next, the probability to each presidential speech of belonging to each topic was assigned:
+
+```{r assign each pf the 5 topics to the speeches}
+document_topic_prob_5 <- tidy(df_lda_5, 
+                            matrix = "gamma")
+
+document_topic_prob_5
+```
+For example, it seemed that Pedro Castillo was the most likely to belong to this the first topic. The speech of Alberto Fujimori in his first speech, and the ones of Alejandro Toledo and Martín Vizcarra were the most likely to belong to topic 2. Dina Boluarte, Francisco Sagasti, PPK and Valentín Paniagua belong to topic 3. In the case of Sagasti and PPK, it also made sense that they were together, since they assumed their positions as part of the same party. On other hand, it seemed that only Ollanta Humala speech was part of topic 4. Similar case is that on the speech of Fujimori in his second term, which is alone in the fifth topic.
+
+In the table below you can see the probability of fitting in one of the topics, together with the original speech.
+
+```{r merge the 5 topics with original data}
+document_topic_merged_5 <- df %>%
+  left_join(document_topic_prob_5,
     by = c("president" = "document")
   )
 
-# Find the most probable topic for each president
-president_topics <- document_topic_merged %>%
+document_topic_merged_5
+```
+To conclude this section, if we could assign only one topic to each inaugural speech, what would it be?:
+
+```{r identify each president's top topic from 5 with LDA model}
+president_topics_5 <- document_topic_merged_5 %>%
   group_by(president) %>%
   top_n(1, gamma) %>%
   select(president, topic)
 
+president_topics_5
 ```
+There are very similar topics. Maybe 5 is a larger number. We will reduce the number of topics to 2, with the hypothesis that this will help to make the themes of each topic more distinct. The exercise will be very similar. We first fit the model:
+
+```{r fit the model with only 2 topics}
+df_lda_2 <- LDA(df_dtm, 
+              k = 2, 
+              control = list(seed = 666))
+df_lda_2
+```
+Then, we assign a probability to each word:
+
+```{r probabilities of words per each of the 2 topics}
+df_lda_topics_2 <- tidy(df_lda_2, 
+                      matrix = "beta")
+
+df_lda_topics_2
+```
+
+Now, let's find out the 20 most probable words for each topic. This could help us understand what is each topic about.
+
+```{r top 20 words per topic}
+top_terms_topic_2 <- df_lda_topics_2 %>%
+  group_by(topic) %>%
+  top_n(20, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+top_terms_topic_2
+```
+The following plot reveals which themes are covered in each topic. In a broad sense, although there are some words that are repeated —such as _país_, Perú, _peruanos_, _nacional_, etc.—, it seems that the first topic covers more politics areas and the second one covers more socio-economic ideas. For example, the first is about _gobierno_, _política_, _congreso_, _democracia_, _patria_, and others. The second addresses _salud_, _educación_ and _economía_ issues, talks about _desarrollo_, _empresa_ and quantifies things with _millones_ (millions): it is unclear it it refers to millions of soles (as for proposing projects or programs and their expected cost in soles, the peruvian currency) or millions of peruvians (as the number of beneficiaries for each proposed project). 
+
+```{r}
+colors2 <- c( "#bf812d", "#01665e")
+
+top_terms_topic_2 %>%
+  mutate(term = reorder_within(term, beta, topic)) %>%
+  ggplot(aes(beta, term, 
+             fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, 
+             scales = "free") +
+  scale_y_reordered() +
+  scale_fill_manual(values = colors2) +
+  theme_minimal() +
+  ggtitle("Top Terms by Topic", 
+          subtitle = "From 1990 to 2022") +
+  labs(
+      x = "Beta Coefficient",
+      y = "Term",
+      fill = "Topic"
+      ) +
+  theme(
+        plot.title = element_text(
+                      hjust = 0.5,
+                      size = 20,
+                      face = "bold"
+                      ),
+        plot.subtitle = element_text(
+                        hjust = 0.5,
+                        size = 14
+                        ),
+        legend.position = "bottom"
+        )
+
+```
+Below we can see which speech (and therefore, which president) could be classified in each cluster. The speeches of Alejandro Toledo, Dina Boluarte, Francisco Sagasti, Martín Vizcarra, Ollanta Humala and Valentín Paniagua are more likely to be classified in the first cluster. The four presidents in our sample who took office by constitutional succession and not by popular vote are included in this cluster. That is, four of six members in this topic were not elected. As for political ideologies, it seems that these do not weigh much in the classification, or else the presidents proclaim themselves to be of a certain wing, but lack more ideological development in their rhetoric: Boluarte was the vice-president of Castillo, the rural left-wing rural leader, and Humala entered with a leftist discourse, although his mandate was more right-wing. These are accompanied in the same topic with Toledo, Vizcarra, who belong to the right or center-right.
+
+
+On the other hand, the two speeches of dictator Alberto Fujimori, the one by Pedro Castillo, and the one by PPK are more likely to enter the 2nd topic. It is confusing that, in this case, PPK is not in the same cluster as Vizcarra and Sagasti, since they were part of the same party: PPK resigned and Vizcarra took over. Faced with Vizcarra's dismissal, Sagasti took office 5 days later. However, in terms of the issues addressed, Castillo was recognized for giving more importance to "social" issues and education -because he was a teacher-, and PPK to economic issues. On this last point, his similarity with Fujimori and his idea of the _revolución productiva de los pequeños_ (the productive revolution of the little ones) makes sense.
+
+```{r assign each of the 2 topics to the speeches}
+document_topic_prob_2 <- tidy(df_lda_2, 
+                            matrix = "gamma")
+
+document_topic_prob_2
+```
+
+```{r merge the 2 topics with original data}
+document_topic_merged_2 <- df %>%
+  left_join(document_topic_prob_2,
+    by = c("president" = "document")
+  )
+
+document_topic_merged_2
+```
+So, to conclude, the following table summarizes more easily which topic each one would belong to, as mentioned above.
+
+```{r identify each president's top topic from 2 with LDA model}
+president_topics_2 <- document_topic_merged_2%>%
+  group_by(president) %>%
+  top_n(1, gamma) %>%
+  select(president, topic)
+
+president_topics_2
+```
+
+## Closing remarks
+
+This analysis is far from exhaustive. However, there are some relevant insights, both in the characterization of the discourses and in the practical way of doing so.
+
+Starting with the latter, because the texts of interest are in Spanish, translating them would have introduced errors. However, the errors that were not introduced by translation could have been introduced by the same alternative packages that were used.  The fact that there are more alternatives for analyzing English texts is an undeniable truth, and the ones we used are not specific to Spanish corpora: they are packages like `SentimentAnalysis` and `syuzhet` that have additional options for setting the language to Spanish or some other language. I consider that these might be suboptimal with respect to their accuracy with English terms. In fact, at one point I tried to perform lemmatization and stemming, but I gave up on including it in this report because the words were truncated in a strange way. 
+
+Regarding the characterization of the speeches, these are full of platitudes and lack references to more concrete issues. They are more focused on the romantic than on the programmatic. Dina Boluarte's speech is particularly scarce, as it does not even have trigrams with more than 2 appearances, and only two bigrams with more than 2 mentions, which also do not have much meaning. Another aspect, even shocking, that this analysis helped to uncover are the mentions of family planning and human rights issues by Fujimori, in his two terms in office. He, who committed atrocities in these two fields, mentioned them more frequently than others in his inaugural speeches. 
+
+Also, in terms of the sentiments of the speeches, one of the packages assigned the vast majority of words as neutral in tone. These results did not seem correct. However, an additional package was able to identify more nuances: 1724 tokens were identified as "positive", being this the mode. This was followed by words classified as trust, negative, and fear. The least used were those of disgust and surprise.
+
+Regarding the hypotheses, these techniques more or less helped to understand the contexts of each assumption of office, as in the case of the topics addressed by Fujimori -human rights, family planning-, those of Castillo -health in the midst of the Covid-19 pandemic, education, etc.-, those of PPK -who repeated several times the idea of the Bicentenary of the Independence of Peru in 2021, although in the end he did not arrive in office until that date- or the length of his texts, those of PPK -who repeated several times the idea of the Bicentenary of the Independence of Peru in 2021, although in the end he did not arrive in office until that date- or the length of their texts, as in the case of Boluarte and Paniagua, in whom it is difficult to identify bigrams or trigrams with a greater number of repetitions. Differences can be seen between those who were elected in elections and those who were promoted to the position by succession or designation. 
+
+
+## Bibliography
+
+Mundo, Redacción BBC News. 2020. “La ola de protestas en Perú que dejó 2 muertos y 100 heridos y culminó con la renuncia del presidente.” BBC News Mundo, November 15, 2020. https://www.bbc.com/mundo/noticias-america-latina-54948270.
+
+Olmo, Guillermo. 2022. “6 presidentes en 4 años: por qué Perú es tan difícil de gobernar.” BBC News Mundo, December 8, 2022. https://www.bbc.com/mundo/noticias-america-latina-63898035.
+
+Rebaza, Claudia, and Jack Guy. 2023. “’They Say We’re Not Peruvian’: Protester Deaths Highlight Peru’s Deep Historical Divisions,” March 10, 2023. https://www.cnn.com/2023/03/10/americas/peru-protester-deaths-historical-divisions-intl/index.html.
+
+Silge, Julia, and David Robinson. 2017. Text Mining with R: A Tidy Approach. First edition. Beijing ; Boston: O’Reilly.
