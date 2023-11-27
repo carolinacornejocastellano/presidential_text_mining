@@ -86,7 +86,7 @@ presidents <-
     "Alberto Fujimori first term")
 
 links <- paste0(
-  "https://raw.githubusercontent.com/cornejocastellano/presidential_text_mining/main/",
+  "https://raw.githubusercontent.com/castellco/presidential_text_mining/main/",
   tolower(gsub(" ", "_", presidents)), ".md")
 ```
 
@@ -108,7 +108,7 @@ df <- tibble(
 )
 ```
 
-After that, the speeches were downloaded from the [GitHub](https://github.com/cornejocastellano/presidential_text_mining) repository. In this way, a dataframe with 3 columns was obtained: president, date and the entire speech in a single line for each president:
+After that, the speeches were downloaded from the [GitHub](https://github.com/castellco/presidential_text_mining) repository. In this way, a dataframe with 3 columns was obtained: president, date and the entire speech in a single line for each president:
 
 ```{r read speeches}
 df$speech <- df$url %>% 
